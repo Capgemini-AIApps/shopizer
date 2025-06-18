@@ -149,7 +149,7 @@ public class StorePickupShippingQuote implements ShippingQuoteModule, ShippingQu
 			
 			shippingOption.setOptionPrice(productPriceUtils.getAmount(price));
 	
-			shippingOption.setOptionPriceText(productPriceUtils.getStoreFormatedAmountWithCurrency(store, productPriceUtils.getAmount(price)));
+			shippingOption.setOptionPriceText(ProductPriceUtils.getStoreFormatedAmountWithCurrency(store, productPriceUtils.getAmount(price)));
 	
 			List<ShippingOption> options = quote.getShippingOptions();
 			

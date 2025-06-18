@@ -129,7 +129,7 @@ public class CustomWeightBasedShippingQuote implements ShippingQuoteModule {
 								shippingOption.setOptionCode(new StringBuilder().append(CUSTOM_WEIGHT).toString());
 								shippingOption.setOptionId(new StringBuilder().append(CUSTOM_WEIGHT).append("_").append(region.getCustomRegionName()).toString());
 								shippingOption.setOptionPrice(quoteItem.getPrice());
-								shippingOption.setOptionPriceText(productPriceUtils.getStoreFormatedAmountWithCurrency(store, quoteItem.getPrice()));
+								shippingOption.setOptionPriceText(ProductPriceUtils.getStoreFormatedAmountWithCurrency(store, quoteItem.getPrice()));
 								break;
 							}
 						}

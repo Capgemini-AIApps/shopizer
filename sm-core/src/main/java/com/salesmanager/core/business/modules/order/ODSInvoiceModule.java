@@ -285,9 +285,9 @@ public class ODSInvoiceModule implements InvoiceModule {
 				
 				int quantity = orderProduct.getProductQuantity();
 				sheet.setValueAt(quantity, 1, productCell);
-				String amount = priceUtil.getStoreFormatedAmountWithCurrency(store, orderProduct.getOneTimeCharge());
+				String amount = ProductPriceUtils.getStoreFormatedAmountWithCurrency(store, orderProduct.getOneTimeCharge());
 				sheet.setValueAt(amount, 2, productCell);
-				String t = priceUtil.getStoreFormatedAmountWithCurrency(store, priceUtil.getOrderProductTotalPrice(store, orderProduct));
+				String t = ProductPriceUtils.getStoreFormatedAmountWithCurrency(store, priceUtil.getOrderProductTotalPrice(store, orderProduct));
 				sheet.setValueAt(t, 3, productCell);
 
 				productCell++;
@@ -303,7 +303,7 @@ public class ODSInvoiceModule implements InvoiceModule {
 				if(totalName.contains(".")) {
 					totalName = orderTotal.getTitle();
 				}
-				String totalValue = priceUtil.getStoreFormatedAmountWithCurrency(store,orderTotal.getValue());
+				String totalValue = ProductPriceUtils.getStoreFormatedAmountWithCurrency(store,orderTotal.getValue());
 				sheet.setValueAt(totalName, 2, productCell);
 				sheet.setValueAt(totalValue, 3, productCell);
 				productCell++;
