@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import org.apache.commons.lang3.StringUtils;
@@ -38,7 +39,7 @@ public class PersistableUserPopulator extends AbstractDataPopulator<PersistableU
   private MerchantStoreService merchantStoreService;
   
   @Autowired
-  @Component("passwordEncoder")
+  @Qualifier("passwordEncoder")
   private PasswordEncoder passwordEncoder;
   
   @Override

@@ -1,6 +1,7 @@
 package com.salesmanager.test.shop.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import org.junit.Assert;
@@ -29,7 +30,7 @@ public class GeneratePasswordTest extends ServicesTestSupport {
     private static final Logger LOGGER = LoggerFactory.getLogger(GeneratePasswordTest.class);
 
   @Autowired
-  @Component("passwordEncoder")
+  @Qualifier("passwordEncoder")
   private PasswordEncoder passwordEncoder;
   
   @Test
