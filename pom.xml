@@ -20,7 +20,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.12</version>
+		<version>3.2.10</version>
 	</parent>
 
 	<modules>
@@ -35,7 +35,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!--java version -->
-		<java.version>11</java.version>
+		<java.version>21</java.version>
 
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
@@ -58,6 +58,10 @@
 		<javax.el.version>2.2.4</javax.el.version>
 		<javax.servlet-api-version>3.0.1</javax.servlet-api-version>
 		<javax.annotation>1.3.2</javax.annotation>
+		<jakarta.inject.version>2.0.1</jakarta.inject.version>
+		<hibernate-ehcache.version>5.6.15.Final</hibernate-ehcache.version>
+		<httpclient.version>4.5.14</httpclient.version>
+		<javax.validation.version>2.0.1.Final</javax.validation.version>
 		<infinispan.version>9.4.18.Final</infinispan.version>
 		<infinispan.tree.version>9.4.18.Final</infinispan.tree.version>
 		<mysql-jdbc-version>8.0.21</mysql-jdbc-version>
@@ -74,6 +78,7 @@
 
 		<!-- api documentation -->
 		<swagger.version>2.9.2</swagger.version>
+		<springdoc.version>2.2.0</springdoc.version>
 
 		<!-- jacoco coverage -->
 		<coverage.lines>.30</coverage.lines>
@@ -119,6 +124,13 @@
 				<groupId>javax.inject</groupId>
 				<artifactId>javax.inject</artifactId>
 				<version>${javax.inject.version}</version>
+			</dependency>
+
+			<!-- Jakarta inject for Spring Boot 3.x -->
+			<dependency>
+				<groupId>jakarta.inject</groupId>
+				<artifactId>jakarta.inject-api</artifactId>
+				<version>${jakarta.inject.version}</version>
 			</dependency>
 
 			<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
@@ -361,10 +373,36 @@
 				<version>${swagger.version}</version>
 			</dependency>
 
+			<!-- SpringDoc OpenAPI for Spring Boot 3.x -->
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+				<version>${springdoc.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>javax.annotation</groupId>
 				<artifactId>javax.annotation-api</artifactId>
 				<version>${javax.annotation}</version>
+			</dependency>
+
+			<!-- Missing dependencies -->
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-ehcache</artifactId>
+				<version>${hibernate-ehcache.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>${httpclient.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.validation</groupId>
+				<artifactId>validation-api</artifactId>
+				<version>${javax.validation.version}</version>
 			</dependency>
 
 		</dependencies>
@@ -377,11 +415,6 @@
 		<dependency>
 			<groupId>javax.inject</groupId>
 			<artifactId>javax.inject</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
@@ -406,18 +439,6 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/net.sf.ehcache/ehcache -->
-		<dependency>
-			<groupId>net.sf.ehcache</groupId>
-			<artifactId>ehcache</artifactId>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
-		<dependency>
-			<groupId>javax.mail</groupId>
-			<artifactId>javax.mail-api</artifactId>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
