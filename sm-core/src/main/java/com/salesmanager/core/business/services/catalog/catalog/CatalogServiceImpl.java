@@ -1,6 +1,6 @@
 package com.salesmanager.core.business.services.catalog.catalog;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.jsoup.helper.Validate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +30,7 @@ implements CatalogService {
 	@Autowired
 	private PageableCatalogRepository pageableCatalogRepository;
 
-	@Inject
+	@Autowired
 	public CatalogServiceImpl(CatalogRepository repository) {
 		super(repository);
 		this.catalogRepository = repository;

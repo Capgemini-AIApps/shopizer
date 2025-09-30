@@ -2,7 +2,7 @@ package com.salesmanager.core.business.services.customer.attribute;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
@@ -21,7 +21,7 @@ public class CustomerAttributeServiceImpl extends
 	
 	private CustomerAttributeRepository customerAttributeRepository;
 
-	@Inject
+	@Autowired
 	public CustomerAttributeServiceImpl(CustomerAttributeRepository customerAttributeRepository) {
 		super(customerAttributeRepository);
 		this.customerAttributeRepository = customerAttributeRepository;

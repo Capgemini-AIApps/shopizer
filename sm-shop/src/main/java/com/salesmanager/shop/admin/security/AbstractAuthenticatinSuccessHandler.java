@@ -2,10 +2,10 @@ package com.salesmanager.shop.admin.security;
 
 import java.util.Date;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,7 +24,7 @@ public abstract class AbstractAuthenticatinSuccessHandler extends SavedRequestAw
 	private static final Logger LOGGER = LoggerFactory.getLogger(AbstractAuthenticatinSuccessHandler.class);
 	
 	
-	@Inject
+	@Autowired
 	private UserService userService;
 	
 	    @Override

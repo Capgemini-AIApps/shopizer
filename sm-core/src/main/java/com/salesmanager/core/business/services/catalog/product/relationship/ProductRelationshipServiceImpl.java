@@ -2,7 +2,7 @@ package com.salesmanager.core.business.services.catalog.product.relationship;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
@@ -23,7 +23,7 @@ public class ProductRelationshipServiceImpl extends
 	
 	private ProductRelationshipRepository productRelationshipRepository;
 	
-	@Inject
+	@Autowired
 	public ProductRelationshipServiceImpl(
 			ProductRelationshipRepository productRelationshipRepository) {
 			super(productRelationshipRepository);

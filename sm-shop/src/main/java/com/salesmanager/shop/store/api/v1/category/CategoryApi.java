@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.validation.Valid;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -56,10 +56,10 @@ public class CategoryApi {
 
 	private static final int DEFAULT_CATEGORY_DEPTH = 0;
 
-	@Inject
+	@Autowired
 	private CategoryFacade categoryFacade;
 
-	@Inject
+	@Autowired
 	private UserFacade userFacade;
 
 	@GetMapping(value = "/category/{id}", produces = { APPLICATION_JSON_VALUE })

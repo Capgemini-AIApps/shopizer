@@ -1,8 +1,8 @@
 package com.salesmanager.shop.store.api.v1.system;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,7 +26,7 @@ public class OptinApi {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(OptinApi.class);
 
-  @Inject private OptinFacade optinFacade;
+  @Autowired private OptinFacade optinFacade;
 
 
   /** Create new optin */

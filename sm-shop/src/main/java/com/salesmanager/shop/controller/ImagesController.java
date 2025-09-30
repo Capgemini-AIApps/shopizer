@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 
 import javax.annotation.PostConstruct;
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -36,10 +36,10 @@ public class ImagesController {
 	
 
 	
-	@Inject
+	@Autowired
 	private ContentService contentService;
 	
-	@Inject
+	@Autowired
 	private ProductImageService productImageService;
 	
 	private byte[] tempImage = null;

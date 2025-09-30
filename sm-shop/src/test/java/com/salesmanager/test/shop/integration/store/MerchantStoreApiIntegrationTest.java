@@ -4,7 +4,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertNotNull;
 import java.util.Arrays;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -33,7 +33,7 @@ public class MerchantStoreApiIntegrationTest extends ServicesTestSupport {
   private static final String CURRENCY = "CAD";
   private static final String DEFAULT_LANGUAGE = "en";
 
-  @Inject
+  @Autowired
   private TestRestTemplate testRestTemplate;
   
   /**

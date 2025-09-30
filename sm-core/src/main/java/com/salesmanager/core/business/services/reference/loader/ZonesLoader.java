@@ -9,7 +9,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,10 +40,10 @@ public class ZonesLoader {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ZonesLoader.class);
 
-	@Inject
+	@Autowired
 	private LanguageService languageService;
 
-	@Inject
+	@Autowired
 	private CountryService countryService;
 	
 	@Autowired

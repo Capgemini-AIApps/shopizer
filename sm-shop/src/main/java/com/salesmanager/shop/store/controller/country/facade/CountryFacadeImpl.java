@@ -12,13 +12,13 @@ import com.salesmanager.shop.store.api.exception.ConversionRuntimeException;
 import com.salesmanager.shop.store.api.exception.ServiceRuntimeException;
 import java.util.List;
 import java.util.stream.Collectors;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CountryFacadeImpl implements CountryFacade {
 
-  @Inject
+  @Autowired
   private CountryService countryService;
 
   @Override

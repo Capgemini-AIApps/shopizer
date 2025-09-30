@@ -6,10 +6,10 @@ import java.security.Principal;
 import java.util.Arrays;
 import java.util.Optional;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -55,13 +55,13 @@ import springfox.documentation.annotations.ApiIgnore;
 		@Tag(name = "Shopping cart resource", description = "Add, remove and retrieve shopping carts") })
 public class ShoppingCartApi {
 
-	@Inject
+	@Autowired
 	private ShoppingCartFacade shoppingCartFacade;
 
-	@Inject
+	@Autowired
 	private com.salesmanager.shop.store.controller.shoppingCart.facade.v1.ShoppingCartFacade shoppingCartFacadev1;
 
-	@Inject
+	@Autowired
 	private CustomerService customerService;
 
 	@Autowired

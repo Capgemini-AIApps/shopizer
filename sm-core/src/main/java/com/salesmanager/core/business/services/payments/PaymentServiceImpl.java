@@ -11,7 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.annotation.Resource;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -56,26 +56,26 @@ public class PaymentServiceImpl implements PaymentService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(PaymentServiceImpl.class);
 	
 
-	@Inject
+	@Autowired
 	private MerchantConfigurationService merchantConfigurationService;
 	
-	@Inject
+	@Autowired
 	private ModuleConfigurationService moduleConfigurationService;
 	
-	@Inject
+	@Autowired
 	private TransactionService transactionService;
 	
-	@Inject
+	@Autowired
 	private OrderService orderService;
 	
-	@Inject
+	@Autowired
 	private CoreConfiguration coreConfiguration;
 	
-	@Inject
+	@Autowired
 	@Resource(name="paymentModules")
 	private Map<String,PaymentModule> paymentModules;
 	
-	@Inject
+	@Autowired
 	private Encryption encryption;
 	
 	@Override

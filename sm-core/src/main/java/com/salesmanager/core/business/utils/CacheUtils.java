@@ -3,7 +3,7 @@ package com.salesmanager.core.business.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +18,7 @@ import com.salesmanager.core.model.merchant.MerchantStore;
 public class CacheUtils {
 	
 	
-    @Inject
+    @Autowired
     @Qualifier("serviceCache")
     private Cache cache;
 	

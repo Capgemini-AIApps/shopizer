@@ -1,8 +1,8 @@
 package com.salesmanager.shop.store.api.v1.user;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 
 import org.apache.http.auth.AuthenticationException;
 import org.slf4j.Logger;
@@ -47,13 +47,13 @@ public class AuthenticateUserApi {
     @Value("${authToken.header}")
     private String tokenHeader;
 
-    @Inject
+    @Autowired
     private AuthenticationManager jwtAdminAuthenticationManager;
     
-    @Inject
+    @Autowired
     private UserDetailsService jwtAdminDetailsService;
 
-    @Inject
+    @Autowired
     private JWTTokenUtil jwtTokenUtil;
 
 	/**

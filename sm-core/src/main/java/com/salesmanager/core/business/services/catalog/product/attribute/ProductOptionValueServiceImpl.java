@@ -2,7 +2,7 @@ package com.salesmanager.core.business.services.catalog.product.attribute;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.Validate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ public class ProductOptionValueServiceImpl extends
 		SalesManagerEntityServiceImpl<Long, ProductOptionValue> implements
 		ProductOptionValueService {
 
-	@Inject
+	@Autowired
 	private ProductAttributeService productAttributeService;
 	
 	@Autowired
@@ -33,7 +33,7 @@ public class ProductOptionValueServiceImpl extends
 	
 	private ProductOptionValueRepository productOptionValueRepository;
 	
-	@Inject
+	@Autowired
 	public ProductOptionValueServiceImpl(
 			ProductOptionValueRepository productOptionValueRepository) {
 			super(productOptionValueRepository);

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -45,10 +45,10 @@ public class SecurityApi {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(SecurityApi.class);
 
-	@Inject
+	@Autowired
 	private PermissionService permissionService;
 
-	@Inject
+	@Autowired
 	private GroupService groupService;
 
 	@ResponseStatus(HttpStatus.OK)

@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -41,7 +41,7 @@ public class ReadableOrderProductMapper implements Mapper<OrderProduct, Readable
 	@Autowired
 	ReadableProductMapper readableProductMapper;
 
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 

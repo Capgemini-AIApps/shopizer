@@ -2,7 +2,7 @@ package com.salesmanager.test.content;
 
 import java.util.Optional;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.junit.Ignore;
 
@@ -19,7 +19,7 @@ import com.salesmanager.core.model.merchant.MerchantStore;
 @Ignore
 public class ContentFolderTest extends com.salesmanager.test.common.AbstractSalesManagerCoreTestCase {
 
-	@Inject
+	@Autowired
 	private ContentService contentService;
 
 

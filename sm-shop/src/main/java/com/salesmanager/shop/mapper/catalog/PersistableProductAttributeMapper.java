@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -30,13 +30,13 @@ import com.salesmanager.shop.store.api.exception.ConversionRuntimeException;
 @Component
 public class PersistableProductAttributeMapper implements Mapper<PersistableProductAttribute, ProductAttribute> {
 
-	@Inject
+	@Autowired
 	private ProductOptionService productOptionService;
-	@Inject
+	@Autowired
 	private ProductOptionValueService productOptionValueService;
-	@Inject
+	@Autowired
 	private ProductService productService;
-	@Inject
+	@Autowired
 	private PersistableProductOptionValueMapper persistableProductOptionValueMapper;
 	
 	@Override

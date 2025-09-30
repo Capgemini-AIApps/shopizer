@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class OrderTotalServiceImpl implements OrderTotalService {
 	@Resource(name="orderTotalsPostProcessors")
 	List<OrderTotalPostProcessorModule> orderTotalPostProcessors;
 	
-	@Inject
+	@Autowired
 	private ProductService productService;
 
 

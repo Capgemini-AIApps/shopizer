@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.Validate;
@@ -51,26 +51,26 @@ import com.salesmanager.shop.utils.LanguageUtils;
 @Service("storeFacade")
 public class StoreFacadeImpl implements StoreFacade {
 
-	@Inject
+	@Autowired
 	private MerchantStoreService merchantStoreService;
 
-	@Inject
+	@Autowired
 	private MerchantConfigurationService merchantConfigurationService;
 
-	@Inject
+	@Autowired
 	private LanguageService languageService;
 
-	@Inject
+	@Autowired
 	private ContentService contentService;
 
-	@Inject
+	@Autowired
 	private PersistableMerchantStorePopulator persistableMerchantStorePopulator;
 
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 
-	@Inject
+	@Autowired
 	private LanguageUtils languageUtils;
 	
 	@Autowired

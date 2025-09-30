@@ -12,7 +12,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -89,7 +89,7 @@ public class SearchServiceImpl implements com.salesmanager.core.business.service
 	
 
 
-	@Inject
+	@Autowired
 	private CoreConfiguration configuration;
 
 	@Autowired

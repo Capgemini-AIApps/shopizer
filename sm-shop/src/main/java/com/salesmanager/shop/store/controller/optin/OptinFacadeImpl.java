@@ -10,18 +10,18 @@ import com.salesmanager.shop.mapper.optin.ReadableOptinMapper;
 import com.salesmanager.shop.model.system.PersistableOptin;
 import com.salesmanager.shop.model.system.ReadableOptin;
 import com.salesmanager.shop.store.api.exception.ServiceRuntimeException;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class OptinFacadeImpl implements OptinFacade {
 
-  @Inject
+  @Autowired
   private OptinService optinService;
 
-  @Inject
+  @Autowired
   private ReadableOptinMapper readableOptinConverter;
-  @Inject
+  @Autowired
   private PersistableOptinMapper persistableOptinConverter;
 
   @Override

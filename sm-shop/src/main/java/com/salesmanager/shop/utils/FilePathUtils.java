@@ -16,8 +16,8 @@ import java.net.URL;
 import java.util.Properties;
 
 import javax.annotation.Resource;
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -40,10 +40,10 @@ public class FilePathUtils {
 	public static final String HTTP = "http://";
 	public static final String HTTPS = "https://";
 
-	@Inject
+	@Autowired
 	private CoreConfiguration coreConfiguration;
 
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 

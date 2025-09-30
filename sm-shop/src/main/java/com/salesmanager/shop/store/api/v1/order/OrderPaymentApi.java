@@ -9,10 +9,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -64,25 +64,25 @@ public class OrderPaymentApi {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(OrderPaymentApi.class);
 
-	@Inject
+	@Autowired
 	private CustomerService customerService;
 
-	@Inject
+	@Autowired
 	private OrderService orderService;
 
-	@Inject
+	@Autowired
 	private ShoppingCartService shoppingCartService;
 
-	@Inject
+	@Autowired
 	private PricingService pricingService;
 
-	@Inject
+	@Autowired
 	private PaymentService paymentService;
 
-	@Inject
+	@Autowired
 	private OrderFacade orderFacade;
 	
-	@Inject
+	@Autowired
 	private AuthorizationUtils authorizationUtils;
 
 	@RequestMapping(value = { "/cart/{code}/payment/init" }, method = RequestMethod.POST)

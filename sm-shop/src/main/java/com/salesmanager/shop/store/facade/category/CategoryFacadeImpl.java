@@ -12,7 +12,7 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.Validate;
 import org.springframework.stereotype.Service;
@@ -49,19 +49,19 @@ import com.salesmanager.shop.store.controller.category.facade.CategoryFacade;
 @Service(value = "categoryFacade")
 public class CategoryFacadeImpl implements CategoryFacade {
 
-	@Inject
+	@Autowired
 	private CategoryService categoryService;
 
-	@Inject
+	@Autowired
 	private MerchantStoreService merchantStoreService;
 
-	@Inject
+	@Autowired
 	private PersistableCategoryPopulator persistableCatagoryPopulator;
 
-	@Inject
+	@Autowired
 	private ReadableCategoryMapper readableCategoryMapper;
 
-	@Inject
+	@Autowired
 	private ProductAttributeService productAttributeService;
 
 	private static final String FEATURED_CATEGORY = "featured";

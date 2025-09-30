@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.Validate;
@@ -51,10 +51,10 @@ public class ProductFacadeV2Impl implements ProductFacade {
 	@Autowired
 	private ProductService productService;
 	
-	@Inject
+	@Autowired
 	private CategoryService categoryService;
 	
-	@Inject
+	@Autowired
 	private ProductRelationshipService productRelationshipService;
 	
 	@Autowired
@@ -72,10 +72,10 @@ public class ProductFacadeV2Impl implements ProductFacade {
 	@Autowired
 	private ProductAttributeService productAttributeService;
 	
-	@Inject
+	@Autowired
 	private PricingService pricingService;
 	
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 

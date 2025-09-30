@@ -11,7 +11,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -110,61 +110,61 @@ public class CustomerFacadeImpl implements CustomerFacade {
   public final static String ROLE_PREFIX = "ROLE_";// Spring Security 4
 
 
-  @Inject
+  @Autowired
   private CustomerService customerService;
 
-  @Inject
+  @Autowired
   private OptinService optinService;
 
-  @Inject
+  @Autowired
   private CustomerOptinService customerOptinService;
 
-  @Inject
+  @Autowired
   private ShoppingCartService shoppingCartService;
 
-  @Inject
+  @Autowired
   private LanguageService languageService;
 
-  @Inject
+  @Autowired
   private LabelUtils messages;
 
-  @Inject
+  @Autowired
   private CountryService countryService;
 
-  @Inject
+  @Autowired
   private GroupService groupService;
 
-  @Inject
+  @Autowired
   private PermissionService permissionService;
 
-  @Inject
+  @Autowired
   private ZoneService zoneService;
 
-  @Inject
+  @Autowired
   private PasswordEncoder passwordEncoder;
 
-  @Inject
+  @Autowired
   private EmailService emailService;
 
-  @Inject
+  @Autowired
   private EmailTemplatesUtils emailTemplatesUtils;
 
-  @Inject
+  @Autowired
   private AuthenticationManager customerAuthenticationManager;
 
-  @Inject
+  @Autowired
   private CustomerReviewService customerReviewService;
 
-  @Inject
+  @Autowired
   private CoreConfiguration coreConfiguration;
   
   @Autowired
   private CustomerPopulator customerPopulator;
 
-  @Inject
+  @Autowired
   private EmailUtils emailUtils;
 
-  @Inject
+  @Autowired
   @Qualifier("img")
   private ImageFilePath imageUtils;
 

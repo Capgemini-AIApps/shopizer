@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
@@ -22,7 +22,7 @@ import com.salesmanager.shop.store.api.exception.ServiceRuntimeException;
 @Service
 public class ZoneFacadeImpl implements ZoneFacade {
 
-  @Inject
+  @Autowired
   private ZoneService zoneService;
 
   @Override

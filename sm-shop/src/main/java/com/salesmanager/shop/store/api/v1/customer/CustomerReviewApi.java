@@ -2,8 +2,8 @@ package com.salesmanager.shop.store.api.v1.customer;
 
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.validation.Valid;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,19 +38,19 @@ public class CustomerReviewApi {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(CustomerReviewApi.class);
 
-	@Inject
+	@Autowired
 	private CustomerFacade customerFacade;
 	
-	@Inject
+	@Autowired
 	private StoreFacade storeFacade;
 	
-	@Inject
+	@Autowired
 	private LanguageUtils languageUtils;
 
-	@Inject
+	@Autowired
 	private CustomerService customerService;
 	
-	@Inject
+	@Autowired
 	private CustomerReviewService customerReviewService;
 
   /**

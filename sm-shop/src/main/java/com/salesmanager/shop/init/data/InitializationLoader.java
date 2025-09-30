@@ -1,7 +1,7 @@
 package com.salesmanager.shop.init.data;
 
 import javax.annotation.PostConstruct;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -34,31 +34,31 @@ public class InitializationLoader {
     private boolean initDefaultData;
 
 	
-	@Inject
+	@Autowired
 	private MerchantConfigurationService merchantConfigurationService;
 	
-	@Inject
+	@Autowired
 	private InitializationDatabase initializationDatabase;
 	
-	//@Inject
+	//@Autowired
 	//private InitData initData;
 	
-	@Inject
+	@Autowired
 	private SystemConfigurationService systemConfigurationService;
 	
-	@Inject
+	@Autowired
 	private WebUserServices userDetailsService;
 
-	@Inject
+	@Autowired
 	protected PermissionService  permissionService;
 	
-	@Inject
+	@Autowired
 	protected GroupService   groupService;
 	
-	@Inject
+	@Autowired
 	private CoreConfiguration configuration;
 	
-	@Inject
+	@Autowired
 	protected MerchantStoreService merchantService;
 
 	

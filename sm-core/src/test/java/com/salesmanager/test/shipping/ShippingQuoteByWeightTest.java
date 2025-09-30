@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.junit.Ignore;
 import org.springframework.util.Assert;
@@ -46,10 +46,10 @@ public class ShippingQuoteByWeightTest extends com.salesmanager.test.common.Abst
 	
 	private static final Date date = new Date(System.currentTimeMillis());
 	
-	@Inject
+	@Autowired
 	private ShippingService shippingService;
 	
-	@Inject
+	@Autowired
 	private LanguageService languageService;
 	
 
@@ -259,7 +259,7 @@ public class ShippingQuoteByWeightTest extends com.salesmanager.test.common.Abst
 	    
 	    ShippingQuote shippingQuote = shippingService.getShippingQuote(dummyCartId, store, delivery, shippingProducts, en);
 
-	    Assert.notNull(shippingQuote);
+	    Assert.notNull(shippingQuote, "Shipping quote cannot be null");
 	    
 	}
 

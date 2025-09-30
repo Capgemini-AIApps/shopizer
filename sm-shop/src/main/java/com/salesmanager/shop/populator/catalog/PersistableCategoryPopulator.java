@@ -2,7 +2,7 @@ package com.salesmanager.shop.populator.catalog;
 
 import java.util.HashSet;
 import java.util.Set;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -21,9 +21,9 @@ import com.salesmanager.shop.model.catalog.category.PersistableCategory;
 public class PersistableCategoryPopulator extends
 		AbstractDataPopulator<PersistableCategory, Category> {
 
-	@Inject
+	@Autowired
 	private CategoryService categoryService;
-	@Inject
+	@Autowired
 	private LanguageService languageService;
 
 

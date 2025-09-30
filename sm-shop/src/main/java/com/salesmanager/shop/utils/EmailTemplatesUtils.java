@@ -27,7 +27,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Map;
@@ -38,32 +38,32 @@ public class EmailTemplatesUtils {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(EmailTemplatesUtils.class);
 	
-	@Inject
+	@Autowired
 	private EmailService emailService;
 
-	@Inject
+	@Autowired
 	private LabelUtils messages;
 	
-	@Inject
+	@Autowired
 	private CountryService countryService;
 	
-	@Inject
+	@Autowired
 	private ProductService productService;
 	
-	@Inject
+	@Autowired
 	private ZoneService zoneService;
 	
-	@Inject
+	@Autowired
 	private PricingService pricingService;
 	
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 	
-	@Inject
+	@Autowired
 	private EmailUtils emailUtils;
 	
-	@Inject
+	@Autowired
 	private FilePathUtils filePathUtils;
 	
 	private final static String LINE_BREAK = "<br/>";

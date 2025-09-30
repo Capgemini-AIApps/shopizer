@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,12 +32,12 @@ public class LanguageServiceImpl extends SalesManagerEntityServiceImpl<Integer, 
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(LanguageServiceImpl.class);
 	
-	@Inject
+	@Autowired
 	private CacheUtils cache;
 	
 	private LanguageRepository languageRepository;
 	
-	@Inject
+	@Autowired
 	public LanguageServiceImpl(LanguageRepository languageRepository) {
 		super(languageRepository);
 		this.languageRepository = languageRepository;

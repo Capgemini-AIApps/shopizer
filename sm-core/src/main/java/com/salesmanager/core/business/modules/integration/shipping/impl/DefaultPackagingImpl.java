@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.salesmanager.core.business.exception.ServiceException;
 import com.salesmanager.core.business.services.shipping.ShippingService;
@@ -22,10 +22,10 @@ import com.salesmanager.core.modules.integration.shipping.model.Packaging;
 public class DefaultPackagingImpl implements Packaging {
 
 	
-	@Inject
+	@Autowired
 	private ShippingService shippingService;
 	
-	@Inject
+	@Autowired
 	private MerchantLogService merchantLogService;
 	
 	/** default dimensions **/

@@ -1,7 +1,7 @@
 package com.salesmanager.shop.store.security;
 
 import java.util.Collection;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.GrantedAuthority;
@@ -30,7 +30,7 @@ public class CustomerServicesImpl extends AbstractCustomerServices{
 	private PermissionService  permissionService;
 	private GroupService   groupService;
 	
-	@Inject
+	@Autowired
 	public CustomerServicesImpl(CustomerService customerService, PermissionService permissionService, GroupService groupService) {
 		super(customerService, permissionService, groupService);
 		this.customerService = customerService;

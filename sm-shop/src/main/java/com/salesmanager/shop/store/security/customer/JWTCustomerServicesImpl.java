@@ -3,7 +3,7 @@ package com.salesmanager.shop.store.security.customer;
 import java.util.Collection;
 import java.util.Date;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -22,7 +22,7 @@ import com.salesmanager.shop.store.security.user.JWTUser;
 public class JWTCustomerServicesImpl extends AbstractCustomerServices {
 	
 	
-	@Inject
+	@Autowired
 	public JWTCustomerServicesImpl(CustomerService customerService, PermissionService permissionService, GroupService groupService) {
 		super(customerService, permissionService, groupService);
 		this.customerService = customerService;

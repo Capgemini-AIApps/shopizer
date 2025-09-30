@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -39,14 +39,14 @@ public class ShippingDecisionPreProcessorImpl implements ShippingQuotePrePostPro
 	
 	private final static String MODULE_CODE = "shippingDecisionModule";
 	
-	@Inject
+	@Autowired
 	private DroolsBeanFactory droolsBeanFactory;
 	
 	//private StatelessKnowledgeSession shippingMethodDecision;
 	
 	//private KnowledgeBase kbase;
 	
-	//@Inject
+	//@Autowired
 	//KieContainer kieShippingDecisionContainer;
 	
 	@Override

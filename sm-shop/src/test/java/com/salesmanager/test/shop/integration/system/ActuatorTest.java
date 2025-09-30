@@ -1,6 +1,6 @@
 package com.salesmanager.test.shop.integration.system;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,7 +23,7 @@ import com.salesmanager.shop.application.ShopApplication;
 @RunWith(SpringRunner.class)
 public class ActuatorTest {
 	
-	  @Inject
+	  @Autowired
 	  private TestRestTemplate testRestTemplate;
 	
 	

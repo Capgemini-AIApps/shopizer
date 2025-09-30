@@ -1,7 +1,7 @@
 package com.salesmanager.shop.store.api.v1.product;
 
 import java.util.List;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -43,7 +43,7 @@ import springfox.documentation.annotations.ApiIgnore;
 @SwaggerDefinition(tags = { @Tag(name = "Product type resource", description = "Manage product types") })
 public class ProductTypeApi {
 
-	@Inject
+	@Autowired
 	private ProductTypeFacade productTypeFacade;
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ProductTypeApi.class);

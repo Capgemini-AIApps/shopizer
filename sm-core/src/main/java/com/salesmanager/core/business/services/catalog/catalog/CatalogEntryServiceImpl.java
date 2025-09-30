@@ -1,6 +1,6 @@
 package com.salesmanager.core.business.services.catalog.catalog;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -26,7 +26,7 @@ implements CatalogEntryService {
 
 	private CatalogEntryRepository catalogEntryRepository;
 	
-	@Inject
+	@Autowired
 	public CatalogEntryServiceImpl(CatalogEntryRepository repository) {
 		super(repository);
 		this.catalogEntryRepository = repository;

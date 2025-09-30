@@ -1,6 +1,6 @@
 package com.salesmanager.core.business.services.reference.currency;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,7 @@ public class CurrencyServiceImpl extends SalesManagerEntityServiceImpl<Long, Cur
 	
 	private CurrencyRepository currencyRepository;
 	
-	@Inject
+	@Autowired
 	public CurrencyServiceImpl(CurrencyRepository currencyRepository) {
 		super(currencyRepository);
 		this.currencyRepository = currencyRepository;

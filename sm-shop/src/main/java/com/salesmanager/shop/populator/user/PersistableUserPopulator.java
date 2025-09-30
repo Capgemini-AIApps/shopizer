@@ -3,8 +3,8 @@ package com.salesmanager.shop.populator.user;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -28,17 +28,17 @@ import com.salesmanager.shop.model.user.PersistableUser;
 @Component
 public class PersistableUserPopulator extends AbstractDataPopulator<PersistableUser, User> {
 
-  @Inject
+  @Autowired
   private LanguageService languageService;
   
-  @Inject
+  @Autowired
   private GroupService groupService;
   
-  @Inject
+  @Autowired
   private MerchantStoreService merchantStoreService;
   
-  @Inject
-  @Named("passwordEncoder")
+  @Autowired
+  @Component("passwordEncoder")
   private PasswordEncoder passwordEncoder;
   
   @Override

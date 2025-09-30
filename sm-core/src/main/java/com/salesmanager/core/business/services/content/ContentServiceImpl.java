@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.regex.Pattern;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
@@ -45,10 +45,10 @@ public class ContentServiceImpl extends SalesManagerEntityServiceImpl<Long, Cont
 	private PageContentRepository pageContentRepository;
 	
 
-	@Inject
+	@Autowired
 	StaticContentFileManager contentFileManager;
 
-	@Inject
+	@Autowired
 	public ContentServiceImpl(ContentRepository contentRepository) {
 		super(contentRepository);
 

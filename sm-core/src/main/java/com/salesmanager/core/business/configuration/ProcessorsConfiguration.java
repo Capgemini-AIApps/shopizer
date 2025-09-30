@@ -3,7 +3,7 @@ package com.salesmanager.core.business.configuration;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -34,7 +34,7 @@ import com.salesmanager.core.modules.order.total.OrderTotalPostProcessorModule;
 @Configuration
 public class ProcessorsConfiguration {
 
-	@Inject
+	@Autowired
 	private PromoCodeCalculatorModule promoCodeCalculatorModule;
 
 

@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -63,10 +63,10 @@ public class PayPalExpressCheckoutPayment implements PaymentModule {
 	private static final Logger LOGGER = LoggerFactory.getLogger(PayPalExpressCheckoutPayment.class);
 	
 	
-	@Inject
+	@Autowired
 	private PricingService pricingService;
 	
-	@Inject
+	@Autowired
 	private CoreConfiguration coreConfiguration;
 
 	@Override

@@ -2,7 +2,7 @@ package com.salesmanager.shop.store.facade.product;
 
 import java.util.Optional;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -30,7 +30,7 @@ public class ProductDefinitionFacadeImpl implements ProductDefinitionFacade {
 	
 
 
-	@Inject
+	@Autowired
 	private ProductService productService;
 
 
@@ -43,7 +43,7 @@ public class ProductDefinitionFacadeImpl implements ProductDefinitionFacade {
 	@Autowired
 	private ProductVariantFacade productVariantFacade;
 
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 

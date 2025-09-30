@@ -6,10 +6,10 @@ import java.util.Locale;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 
 import com.salesmanager.core.business.services.order.OrderService;
 import com.salesmanager.core.model.order.orderstatus.OrderStatus;
@@ -71,19 +71,19 @@ public class OrderApi {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(OrderApi.class);
 
-	@Inject
+	@Autowired
 	private CustomerService customerService;
 
-	@Inject
+	@Autowired
 	private OrderFacade orderFacade;
 
-	@Inject
+	@Autowired
 	private OrderService orderService;
 
-	@Inject
+	@Autowired
 	private com.salesmanager.shop.store.controller.order.facade.v1.OrderFacade orderFacadeV1;
 
-	@Inject
+	@Autowired
 	private ShoppingCartService shoppingCartService;
 
 	@Autowired
@@ -92,10 +92,10 @@ public class OrderApi {
 	@Autowired
 	private CustomerFacade customerFacadev1; //v1 version
 
-	@Inject
+	@Autowired
 	private AuthorizationUtils authorizationUtils;
 
-	@Inject
+	@Autowired
 	private CredentialsService credentialsService;
 
 	private static final String DEFAULT_ORDER_LIST_COUNT = "25";

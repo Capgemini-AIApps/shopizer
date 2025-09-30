@@ -8,10 +8,10 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.slf4j.Logger;
@@ -59,10 +59,10 @@ import springfox.documentation.annotations.ApiIgnore;
 		@Tag(name = "Product images management", description = "Add and remove products images. Change images sort order.") })
 public class ProductImageApi {
 
-	@Inject
+	@Autowired
 	private ProductImageService productImageService;
 
-	@Inject
+	@Autowired
 	private ProductService productService;
 	
 	@Autowired

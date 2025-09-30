@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -60,14 +60,14 @@ public class ContentAdministrationApi {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(ContentAdministrationApi.class);
 
-	@Inject
+	@Autowired
 	private ContentFacade contentFacade;
 	
 	@Autowired
 	private FileNameUtils fileNameUtils;
 	
 	
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 	

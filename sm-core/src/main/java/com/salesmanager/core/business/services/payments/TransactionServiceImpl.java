@@ -11,7 +11,7 @@ import com.salesmanager.core.model.payments.TransactionType;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -28,7 +28,7 @@ public class TransactionServiceImpl  extends SalesManagerEntityServiceImpl<Long,
 
 	private TransactionRepository transactionRepository;
 	
-	@Inject
+	@Autowired
 	public TransactionServiceImpl(TransactionRepository transactionRepository) {
 		super(transactionRepository);
 		this.transactionRepository = transactionRepository;

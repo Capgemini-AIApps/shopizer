@@ -2,9 +2,9 @@ package com.salesmanager.shop.store.api.v1.system;
 
 import java.util.Locale;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -36,9 +36,9 @@ import springfox.documentation.annotations.ApiIgnore;
 public class ContactApi {
 
 
-  @Inject private LanguageService languageService;
+  @Autowired private LanguageService languageService;
 
-  @Inject private EmailTemplatesUtils emailTemplatesUtils;
+  @Autowired private EmailTemplatesUtils emailTemplatesUtils;
 
   @PostMapping("/contact")
   @ApiOperation(

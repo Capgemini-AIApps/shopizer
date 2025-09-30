@@ -2,7 +2,7 @@ package com.salesmanager.core.business.modules.order;
 
 import java.io.ByteArrayOutputStream;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,13 +33,13 @@ public class ODSInvoiceModule implements InvoiceModule {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger( ODSInvoiceModule.class );
 	
-	@Inject
+	@Autowired
 	private ZoneService zoneService;
 	
-	@Inject
+	@Autowired
 	private CountryService countryService;
 	
-	@Inject
+	@Autowired
 	private ProductPriceUtils priceUtil;
 
 	@Deprecated

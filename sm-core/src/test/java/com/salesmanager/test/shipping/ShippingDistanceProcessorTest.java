@@ -1,6 +1,6 @@
 package com.salesmanager.test.shipping;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.junit.Ignore;
 
@@ -14,7 +14,7 @@ import com.salesmanager.core.modules.integration.shipping.model.ShippingQuotePre
 @Ignore
 public class ShippingDistanceProcessorTest {
 	
-	@Inject
+	@Autowired
 	ShippingQuotePrePostProcessModule shippingDecisionTablePreProcessor;
 
 	@Ignore

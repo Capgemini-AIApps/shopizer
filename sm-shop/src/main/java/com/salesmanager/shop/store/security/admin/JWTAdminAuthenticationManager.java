@@ -1,8 +1,8 @@
 package com.salesmanager.shop.store.security.admin;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -26,10 +26,10 @@ public class JWTAdminAuthenticationManager extends CustomAuthenticationManager {
   protected final Log logger = LogFactory.getLog(getClass());
   private static final String BEARER = "Bearer";
 
-  @Inject
+  @Autowired
   private JWTTokenUtil jwtTokenUtil;
 
-  @Inject
+  @Autowired
   private UserDetailsService jwtAdminDetailsService;
 
   @Override

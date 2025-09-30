@@ -18,7 +18,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import java.util.HashSet;
 import java.util.List;
 
@@ -30,12 +30,12 @@ public class ManufacturerServiceImpl extends SalesManagerEntityServiceImpl<Long,
 
   private static final Logger LOGGER = LoggerFactory.getLogger(ManufacturerServiceImpl.class);
 
-  @Inject
+  @Autowired
   private PageableManufacturerRepository pageableManufacturerRepository;
   
   private ManufacturerRepository manufacturerRepository;
 
-  @Inject
+  @Autowired
   public ManufacturerServiceImpl(ManufacturerRepository manufacturerRepository) {
     super(manufacturerRepository);
     this.manufacturerRepository = manufacturerRepository;

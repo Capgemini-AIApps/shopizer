@@ -25,7 +25,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -39,24 +39,24 @@ public class ShoppingCartServiceImpl extends SalesManagerEntityServiceImpl<Long,
 
 	private ShoppingCartRepository shoppingCartRepository;
 
-	@Inject
+	@Autowired
 	private ProductService productService;
 
-	@Inject
+	@Autowired
 	private ShoppingCartItemRepository shoppingCartItemRepository;
 
-	@Inject
+	@Autowired
 	private ShoppingCartAttributeRepository shoppingCartAttributeItemRepository;
 
-	@Inject
+	@Autowired
 	private PricingService pricingService;
 
-	@Inject
+	@Autowired
 	private ProductAttributeService productAttributeService;
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ShoppingCartServiceImpl.class);
 
-	@Inject
+	@Autowired
 	public ShoppingCartServiceImpl(ShoppingCartRepository shoppingCartRepository) {
 		super(shoppingCartRepository);
 		this.shoppingCartRepository = shoppingCartRepository;
@@ -197,7 +197,7 @@ public class ShoppingCartServiceImpl extends SalesManagerEntityServiceImpl<Long,
 				return shoppingCart;
 			}
 
-		} catch (javax.persistence.NoResultException nre) {
+		} catch (jakarta.persistence.NoResultException nre) {
 			return null;
 		} catch (Throwable e) {
 			throw new ServiceException(e);

@@ -1,6 +1,6 @@
 package com.salesmanager.shop.store.security;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service("socialCustomerDetailsService")
 public class SocialCustomerServicesImpl implements UserDetailsService{
 	
-	@Inject
+	@Autowired
 	UserDetailsService customerDetailsService;
 
 	@Override

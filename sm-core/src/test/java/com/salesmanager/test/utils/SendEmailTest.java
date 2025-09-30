@@ -3,7 +3,7 @@ package com.salesmanager.test.utils;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -23,7 +23,7 @@ import com.salesmanager.test.configuration.ConfigurationTest;
 @Ignore
 public class SendEmailTest extends AbstractSalesManagerCoreTestCase {
   
-  @Inject
+  @Autowired
   private EmailService emailService;
   
   @Test

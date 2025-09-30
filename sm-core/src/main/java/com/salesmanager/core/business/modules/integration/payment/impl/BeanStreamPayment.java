@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.UUID;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -44,10 +44,10 @@ import com.salesmanager.core.modules.integration.payment.model.PaymentModule;
 
 public class BeanStreamPayment implements PaymentModule {
 	
-	@Inject
+	@Autowired
 	private ProductPriceUtils productPriceUtils;
 	
-	@Inject
+	@Autowired
 	private MerchantLogService merchantLogService;
 	
 

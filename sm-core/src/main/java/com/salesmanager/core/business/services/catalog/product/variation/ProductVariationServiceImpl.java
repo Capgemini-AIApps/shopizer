@@ -3,7 +3,7 @@ package com.salesmanager.core.business.services.catalog.product.variation;
 import java.util.List;
 import java.util.Optional;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -24,10 +24,10 @@ public class ProductVariationServiceImpl extends
 		SalesManagerEntityServiceImpl<Long, ProductVariation> implements
 		ProductVariationService {
 
-	@Inject
+	@Autowired
 	private ProductVariationRepository productVariationRepository;
 	
-	@Inject
+	@Autowired
 	public ProductVariationServiceImpl(
 			ProductVariationRepository productVariationSetRepository) {
 		super(productVariationSetRepository);

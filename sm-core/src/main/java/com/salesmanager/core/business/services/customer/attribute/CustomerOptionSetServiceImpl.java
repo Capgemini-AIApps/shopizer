@@ -2,7 +2,7 @@ package com.salesmanager.core.business.services.customer.attribute;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.Validate;
 import org.springframework.stereotype.Service;
@@ -23,11 +23,11 @@ public class CustomerOptionSetServiceImpl extends
 		SalesManagerEntityServiceImpl<Long, CustomerOptionSet> implements CustomerOptionSetService {
 
 
-	@Inject
+	@Autowired
 	private CustomerOptionSetRepository customerOptionSetRepository;
 	
 
-	@Inject
+	@Autowired
 	public CustomerOptionSetServiceImpl(
 			CustomerOptionSetRepository customerOptionSetRepository) {
 			super(customerOptionSetRepository);

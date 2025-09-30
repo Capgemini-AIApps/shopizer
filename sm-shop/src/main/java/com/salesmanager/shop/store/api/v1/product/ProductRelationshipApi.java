@@ -2,8 +2,8 @@ package com.salesmanager.shop.store.api.v1.product;
 
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,9 +31,9 @@ import springfox.documentation.annotations.ApiIgnore;
 @RequestMapping("/api/v1")
 public class ProductRelationshipApi {
 
-  @Inject private ProductFacade productFacade;
+  @Autowired private ProductFacade productFacade;
 
-  @Inject private ProductService productService;
+  @Autowired private ProductService productService;
 
   private static final Logger LOGGER = LoggerFactory.getLogger(ProductRelationshipApi.class);
 

@@ -1,6 +1,6 @@
 package com.salesmanager.core.business.services.system;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +22,7 @@ public class MerchantLogServiceImpl extends
 	
 	private MerchantLogRepository merchantLogRepository;
 	
-	@Inject
+	@Autowired
 	public MerchantLogServiceImpl(
 			MerchantLogRepository merchantLogRepository) {
 			super(merchantLogRepository);

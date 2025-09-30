@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Optional;
 
 import javax.annotation.Resource;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -72,45 +72,45 @@ public class ShippingServiceImpl implements ShippingService {
 	private final static String SHIPPING_DISTANCE = "shippingDistanceModule";
 
 	
-	@Inject
+	@Autowired
 	private MerchantConfigurationService merchantConfigurationService;
 	
 
-	@Inject
+	@Autowired
 	private PricingService pricingService;
 	
-	@Inject
+	@Autowired
 	private ModuleConfigurationService moduleConfigurationService;
 	
-	@Inject
+	@Autowired
 	private Packaging packaging;
 	
-	@Inject
+	@Autowired
 	private CountryService countryService;
 	
-	@Inject
+	@Autowired
 	private LanguageService languageService;
 	
-	@Inject
+	@Autowired
 	private Encryption encryption;
 
-	@Inject
+	@Autowired
 	private ShippingOriginService shippingOriginService;
 	
-	@Inject
+	@Autowired
 	private ShippingQuoteService shippingQuoteService;
 	
-	@Inject
+	@Autowired
 	@Resource(name="shippingModules")
 	private Map<String,ShippingQuoteModule> shippingModules;
 	
 	//shipping pre-processors
-	@Inject
+	@Autowired
 	@Resource(name="shippingModulePreProcessors")
 	private List<ShippingQuotePrePostProcessModule> shippingModulePreProcessors;
 	
 	//shipping post-processors
-	@Inject
+	@Autowired
 	@Resource(name="shippingModulePostProcessors")
 	private List<ShippingQuotePrePostProcessModule> shippingModulePostProcessors;
 	

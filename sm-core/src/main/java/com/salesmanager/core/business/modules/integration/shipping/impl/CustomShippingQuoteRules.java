@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -35,7 +35,7 @@ public class CustomShippingQuoteRules implements ShippingQuoteModule {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(CustomShippingQuoteRules.class);
 	
-	@Inject
+	@Autowired
 	private DroolsBeanFactory droolsBeanFactory;
 
 	public final static String MODULE_CODE = "customQuotesRules";

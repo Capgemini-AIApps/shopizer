@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -59,25 +59,25 @@ import com.salesmanager.shop.utils.ImageFilePath;
 public class ProductCommonFacadeImpl implements ProductCommonFacade {
 
 
-	@Inject
+	@Autowired
 	private LanguageService languageService;
 
-	@Inject
+	@Autowired
 	private ProductService productService;
 
-	@Inject
+	@Autowired
 	private PricingService pricingService;
 
-	@Inject
+	@Autowired
 	private CustomerService customerService;
 
-	@Inject
+	@Autowired
 	private ProductReviewService productReviewService;
 	
 	@Autowired
 	private PersistableProductMapper persistableProductMapper;
 
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 

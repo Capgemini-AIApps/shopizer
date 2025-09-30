@@ -4,8 +4,8 @@ import java.security.Principal;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,10 +42,10 @@ public class SearchToolsApi {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(SearchToolsApi.class);
 
-	@Inject
+	@Autowired
 	private SearchFacade searchFacade;
 
-	@Inject
+	@Autowired
 	private UserFacade userFacade;
 
 	@PostMapping("/private/system/search/index")

@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Locale;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,7 +32,7 @@ public class PricingServiceImpl implements PricingService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(PricingServiceImpl.class);
 	
 
-	@Inject
+	@Autowired
 	private ProductPriceUtils priceUtil;
 	
 	@Override

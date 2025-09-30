@@ -3,9 +3,9 @@ package com.salesmanager.shop.store.api.v1.customer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 
 import org.apache.commons.lang3.Validate;
 import org.apache.http.auth.AuthenticationException;
@@ -67,19 +67,19 @@ public class AuthenticateCustomerApi {
     @Value("${authToken.header}")
     private String tokenHeader;
 
-    @Inject
+    @Autowired
     private AuthenticationManager jwtCustomerAuthenticationManager;
 
-    @Inject
+    @Autowired
     private JWTTokenUtil jwtTokenUtil;
 
-    @Inject
+    @Autowired
     private UserDetailsService jwtCustomerDetailsService;
     
-    @Inject
+    @Autowired
     private CustomerFacade customerFacade;
     
-    @Inject
+    @Autowired
     private StoreFacade storeFacade;
 
     @Autowired

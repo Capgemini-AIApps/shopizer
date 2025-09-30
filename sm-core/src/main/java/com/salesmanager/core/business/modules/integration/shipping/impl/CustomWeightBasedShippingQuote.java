@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -37,10 +37,10 @@ public class CustomWeightBasedShippingQuote implements ShippingQuoteModule {
 	public final static String MODULE_CODE = "weightBased";
 	private final static String CUSTOM_WEIGHT = "CUSTOM_WEIGHT";
 	
-	@Inject
+	@Autowired
 	private MerchantConfigurationService merchantConfigurationService;
 	
-	@Inject
+	@Autowired
 	private ProductPriceUtils productPriceUtils;
 
 

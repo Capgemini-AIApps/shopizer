@@ -3,7 +3,7 @@ package com.salesmanager.shop.populator.store;
 import java.util.Date;
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -31,15 +31,15 @@ import com.salesmanager.shop.utils.DateUtil;
 @Component
 public class PersistableMerchantStorePopulator extends AbstractDataPopulator<PersistableMerchantStore, MerchantStore> {
 
-	@Inject
+	@Autowired
 	private CountryService countryService;
-	@Inject
+	@Autowired
 	private ZoneService zoneService;
-	@Inject
+	@Autowired
 	private LanguageService languageService;
-	@Inject
+	@Autowired
 	private CurrencyService currencyService;
-	@Inject
+	@Autowired
 	private MerchantStoreService merchantStoreService;
 	
 	

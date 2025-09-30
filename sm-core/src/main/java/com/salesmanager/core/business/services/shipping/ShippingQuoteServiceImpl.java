@@ -2,7 +2,7 @@ package com.salesmanager.core.business.services.shipping;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
@@ -25,10 +25,10 @@ public class ShippingQuoteServiceImpl extends SalesManagerEntityServiceImpl<Long
 	
 	private ShippingQuoteRepository shippingQuoteRepository;
 	
-	@Inject
+	@Autowired
 	private ShippingService shippingService;
 	
-	@Inject
+	@Autowired
 	public ShippingQuoteServiceImpl(ShippingQuoteRepository repository) {
 		super(repository);
 		this.shippingQuoteRepository = repository;
