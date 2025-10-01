@@ -1,7 +1,7 @@
 package com.salesmanager.core.business.services.catalog.product.attribute;
 
 import java.util.List;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.apache.commons.lang3.Validate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -27,10 +27,10 @@ public class ProductOptionServiceImpl extends
 	@Autowired
 	private PageableProductOptionRepository pageableProductOptionRepository;
 	
-	@Inject
+	@Autowired
 	private ProductAttributeService productAttributeService;
 	
-	@Inject
+	@Autowired
 	public ProductOptionServiceImpl(
 			ProductOptionRepository productOptionRepository) {
 			super(productOptionRepository);

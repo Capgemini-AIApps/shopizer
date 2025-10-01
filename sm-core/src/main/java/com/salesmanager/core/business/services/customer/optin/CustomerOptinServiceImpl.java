@@ -2,7 +2,7 @@ package com.salesmanager.core.business.services.customer.optin;
 
 
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.Validate;
 import org.springframework.stereotype.Service;
@@ -21,7 +21,7 @@ public class CustomerOptinServiceImpl extends SalesManagerEntityServiceImpl<Long
 	private CustomerOptinRepository customerOptinRepository;
 	
 	
-	@Inject
+	@Autowired
 	public CustomerOptinServiceImpl(CustomerOptinRepository customerOptinRepository) {
 		super(customerOptinRepository);
 		this.customerOptinRepository = customerOptinRepository;

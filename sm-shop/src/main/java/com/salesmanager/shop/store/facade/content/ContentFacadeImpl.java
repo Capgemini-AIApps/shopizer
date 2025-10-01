@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.helper.Validate;
@@ -58,17 +58,17 @@ public class ContentFacadeImpl implements ContentFacade {
 
 	public static final String FILE_CONTENT_DELIMETER = "/";
 
-	@Inject
+	@Autowired
 	private ContentService contentService;
 
-	@Inject
+	@Autowired
 	private LanguageService languageService;
 
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 
-	@Inject
+	@Autowired
 	private FilePathUtils fileUtils;
 
 	@Override

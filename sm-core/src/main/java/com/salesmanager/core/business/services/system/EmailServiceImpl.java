@@ -1,6 +1,6 @@
 package com.salesmanager.core.business.services.system;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
@@ -16,10 +16,10 @@ import com.salesmanager.core.model.system.MerchantConfiguration;
 @Service("emailService")
 public class EmailServiceImpl implements EmailService {
 
-	@Inject
+	@Autowired
 	private MerchantConfigurationService merchantConfigurationService;
 	
-	@Inject
+	@Autowired
 	private HtmlEmailSender sender;
 	
 	@Override

@@ -10,9 +10,9 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -70,10 +70,10 @@ public class MerchantStoreApi {
 	private static final Map<String, String> MAPPING_FIELDS = ImmutableMap.<String, String>builder()
 			.put("name", "name").put("readableAudit.user", "auditSection.modifiedBy").build();
 
-	@Inject
+	@Autowired
 	private StoreFacade storeFacade;
 
-	@Inject
+	@Autowired
 	private UserFacade userFacade;
 
 	@GetMapping(value = { "/store/{code}" }, produces = MediaType.APPLICATION_JSON_VALUE)

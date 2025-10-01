@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
@@ -31,12 +31,12 @@ public class ZoneServiceImpl extends SalesManagerEntityServiceImpl<Long, Zone> i
 
 	private ZoneRepository zoneRepository;
 	
-	@Inject
+	@Autowired
 	private CacheUtils cache;
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(ZoneServiceImpl.class);
 
-	@Inject
+	@Autowired
 	public ZoneServiceImpl(ZoneRepository zoneRepository) {
 		super(zoneRepository);
 		this.zoneRepository = zoneRepository;

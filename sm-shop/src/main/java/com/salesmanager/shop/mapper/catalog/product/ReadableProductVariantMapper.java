@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.jsoup.helper.Validate;
@@ -40,7 +40,7 @@ public class ReadableProductVariantMapper implements Mapper<ProductVariant, Read
 	@Autowired
 	private ReadableInventoryMapper readableInventoryMapper;
 	
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imagUtils;
 

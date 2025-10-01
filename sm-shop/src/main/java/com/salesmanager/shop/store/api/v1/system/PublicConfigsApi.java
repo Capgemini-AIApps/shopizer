@@ -1,6 +1,6 @@
 package com.salesmanager.shop.store.api.v1.system;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,11 +23,11 @@ public class PublicConfigsApi {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(PublicConfigsApi.class);
 
-  @Inject private StoreFacade storeFacade;
+  @Autowired private StoreFacade storeFacade;
 
-  @Inject private LanguageUtils languageUtils;
+  @Autowired private LanguageUtils languageUtils;
 
-  @Inject private MerchantConfigurationFacade configurationFacade;
+  @Autowired private MerchantConfigurationFacade configurationFacade;
 
   /**
    * Get public set of merchant configuration --- allow online purchase --- social links

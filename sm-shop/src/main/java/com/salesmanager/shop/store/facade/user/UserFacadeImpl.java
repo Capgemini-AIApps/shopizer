@@ -10,7 +10,7 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -82,22 +82,22 @@ public class UserFacadeImpl implements UserFacade {
 
 	private static final String RESET_PASSWORD_TEXT = "RESET_PASSWORD_TEXT";
 
-	@Inject
+	@Autowired
 	private MerchantStoreService merchantStoreService;
 
-	@Inject
+	@Autowired
 	private UserService userService;
 
-	@Inject
+	@Autowired
 	private PermissionService permissionService;
 
-	@Inject
+	@Autowired
 	private LanguageService languageService;
 
-	@Inject
+	@Autowired
 	private PersistableUserPopulator persistableUserPopulator;
 
-	@Inject
+	@Autowired
 	private SecurityFacade securityFacade;
 
 	@Autowired
@@ -116,10 +116,10 @@ public class UserFacadeImpl implements UserFacade {
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 
-	@Inject
+	@Autowired
 	private LabelUtils messages;
 
-	@Inject
+	@Autowired
 	private PasswordEncoder passwordEncoder;
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(UserFacadeImpl.class);

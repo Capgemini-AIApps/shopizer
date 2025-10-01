@@ -3,8 +3,8 @@ package com.salesmanager.shop.store.api.v1.references;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,17 +42,17 @@ public class ReferencesApi {
   private static final Logger LOGGER = LoggerFactory.getLogger(ReferencesApi.class);
 
 
-  @Inject private StoreFacade storeFacade;
+  @Autowired private StoreFacade storeFacade;
 
-  @Inject private LanguageUtils languageUtils;
+  @Autowired private LanguageUtils languageUtils;
 
-  @Inject private LanguageFacade languageFacade;
+  @Autowired private LanguageFacade languageFacade;
 
-  @Inject private CountryFacade countryFacade;
+  @Autowired private CountryFacade countryFacade;
 
-  @Inject private ZoneFacade zoneFacade;
+  @Autowired private ZoneFacade zoneFacade;
 
-  @Inject private CurrencyFacade currencyFacade;
+  @Autowired private CurrencyFacade currencyFacade;
 
   /**
    * Search languages by language code private/languages returns everything

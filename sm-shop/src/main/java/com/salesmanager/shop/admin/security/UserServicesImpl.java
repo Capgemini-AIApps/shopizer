@@ -20,8 +20,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -41,23 +42,23 @@ public class UserServicesImpl implements WebUserServices{
 	
 	private static final String DEFAULT_INITIAL_PASSWORD = "password";
 
-	@Inject
+	@Autowired
 	private UserService userService;
 	
 
-	@Inject
+	@Autowired
 	private MerchantStoreService merchantStoreService;
 	
-	@Inject
-	@Named("passwordEncoder")
+	@Autowired
+	@Qualifier("passwordEncoder")
 	private PasswordEncoder passwordEncoder;
 	
 
 	
-	@Inject
+	@Autowired
 	protected PermissionService  permissionService;
 	
-	@Inject
+	@Autowired
 	protected GroupService   groupService;
 	
 	public final static String ROLE_PREFIX = "ROLE_";

@@ -1,6 +1,6 @@
 package com.salesmanager.shop.mapper.catalog;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -16,7 +16,7 @@ import com.salesmanager.shop.utils.ImageFilePath;
 public class ReadableProductImageMapper implements Mapper<ProductImage, ReadableImage> {
 
 	
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 

@@ -6,7 +6,7 @@ import java.text.NumberFormat;
 import java.util.List;
 import java.util.Locale;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -31,19 +31,19 @@ import com.salesmanager.test.configuration.ConfigurationTest;
 public class UtilsTestCase  {
 	
 	
-	@Inject
+	@Autowired
 	private CountryService countryService;
 	
-	@Inject
+	@Autowired
 	private CurrencyService currencyService;
 	
-	@Inject
+	@Autowired
 	private Encryption encryption;
 	
-	@Inject
+	@Autowired
 	private CacheUtils cache;
 	
-	@Inject
+	@Autowired
 	private GeoLocation geoLoaction;
 	
 

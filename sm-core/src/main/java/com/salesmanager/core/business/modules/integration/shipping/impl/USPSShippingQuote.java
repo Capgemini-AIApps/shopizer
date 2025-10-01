@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.digester.Digester;
 import org.apache.commons.lang3.StringUtils;
@@ -59,10 +59,10 @@ public class USPSShippingQuote implements ShippingQuoteModule {
 	private static final Logger LOGGER = LoggerFactory.getLogger(USPSShippingQuote.class);
 
 	
-	@Inject
+	@Autowired
 	private ProductPriceUtils productPriceUtils;
 	
-	@Inject
+	@Autowired
 	private CountryService countryService;
 	
 

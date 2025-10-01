@@ -9,7 +9,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.Ignore;
@@ -30,7 +30,7 @@ import com.salesmanager.core.model.merchant.MerchantStore;
 @Ignore
 public class ContentImagesTest extends com.salesmanager.test.common.AbstractSalesManagerCoreTestCase {
 
-	@Inject
+	@Autowired
 	private ContentService contentService;
 
 	// @Test

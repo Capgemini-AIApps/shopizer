@@ -3,7 +3,7 @@
  */
 package com.salesmanager.core.business.services.shoppingcart;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
@@ -35,10 +35,10 @@ public class ShoppingCartCalculationServiceImpl implements ShoppingCartCalculati
 
 	protected final Logger LOG = LoggerFactory.getLogger(getClass());
 
-	@Inject
+	@Autowired
 	private ShoppingCartService shoppingCartService;
 
-	@Inject
+	@Autowired
 	private OrderService orderService;
 
 	/**

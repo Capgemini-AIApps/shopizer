@@ -3,7 +3,7 @@ package com.salesmanager.shop.utils;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Component;
 
@@ -22,7 +22,7 @@ import com.salesmanager.shop.store.controller.user.facade.UserFacade;
 @Component
 public class AuthorizationUtils {
 	
-	@Inject
+	@Autowired
 	private UserFacade userFacade;
 	
 	public String authenticatedUser() {

@@ -4,7 +4,7 @@ package com.salesmanager.core.business.services.catalog.product.price;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
@@ -21,7 +21,7 @@ public class ProductPriceServiceImpl extends SalesManagerEntityServiceImpl<Long,
 	
 	private ProductPriceRepository productPriceRepository;
 
-	@Inject
+	@Autowired
 	public ProductPriceServiceImpl(ProductPriceRepository productPriceRepository) {
 		super(productPriceRepository);
 		this.productPriceRepository = productPriceRepository;

@@ -8,13 +8,13 @@ import com.salesmanager.shop.store.controller.currency.facade.CurrencyFacade;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CurrencyFacadeImpl implements CurrencyFacade {
 
-  @Inject
+  @Autowired
   private CurrencyService currencyService;
 
   @Override

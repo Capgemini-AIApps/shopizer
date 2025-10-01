@@ -2,7 +2,7 @@ package com.salesmanager.core.business.services.catalog.product.attribute;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -27,7 +27,7 @@ public class ProductAttributeServiceImpl extends SalesManagerEntityServiceImpl<L
 	@Autowired
 	private PageableProductAttributeRepository pageableProductAttributeRepository;
 
-	@Inject
+	@Autowired
 	public ProductAttributeServiceImpl(ProductAttributeRepository productAttributeRepository) {
 		super(productAttributeRepository);
 		this.productAttributeRepository = productAttributeRepository;

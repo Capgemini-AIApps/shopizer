@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
@@ -38,7 +38,7 @@ import com.stripe.model.Refund;
 
 public class StripePayment implements PaymentModule {
 	
-	@Inject
+	@Autowired
 	private ProductPriceUtils productPriceUtils;
 
 	

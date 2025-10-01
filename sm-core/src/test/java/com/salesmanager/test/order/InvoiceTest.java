@@ -11,7 +11,7 @@ import org.junit.Ignore;
 @Ignore
 public class InvoiceTest extends com.salesmanager.test.common.AbstractSalesManagerCoreTestCase {
 /*	
-	@Inject
+	@Autowired
 	ProductPriceUtils priceUtil;
 
 

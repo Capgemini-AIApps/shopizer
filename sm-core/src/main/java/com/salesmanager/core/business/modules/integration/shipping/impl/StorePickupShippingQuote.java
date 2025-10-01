@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.Validate;
 
@@ -42,10 +42,10 @@ public class StorePickupShippingQuote implements ShippingQuoteModule, ShippingQu
 	
 	public final static String MODULE_CODE = "storePickUp";
 
-	@Inject
+	@Autowired
 	private MerchantConfigurationService merchantConfigurationService;
 	
-	@Inject
+	@Autowired
 	private ProductPriceUtils productPriceUtils;
 
 

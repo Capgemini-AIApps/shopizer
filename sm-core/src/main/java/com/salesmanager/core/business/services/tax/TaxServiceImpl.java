@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
@@ -41,13 +41,13 @@ public class TaxServiceImpl
 	private final static String TAX_CONFIGURATION = "TAX_CONFIG";
 	private final static String DEFAULT_TAX_CLASS = "DEFAULT";
 	
-	@Inject
+	@Autowired
 	private MerchantConfigurationService merchantConfigurationService;
 	
-	@Inject
+	@Autowired
 	private TaxRateService taxRateService;
 	
-	@Inject
+	@Autowired
 	private TaxClassService taxClassService;
 	
 	@Override

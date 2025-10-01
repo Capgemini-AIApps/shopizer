@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -71,36 +71,36 @@ public class OrderServiceImpl  extends SalesManagerEntityServiceImpl<Long, Order
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderServiceImpl.class);
 
-    @Inject
+    @Autowired
     private InvoiceModule invoiceModule;
 
-    @Inject
+    @Autowired
     private ShippingService shippingService;
 
-    @Inject
+    @Autowired
     private PaymentService paymentService;
 
-    @Inject
+    @Autowired
     private ProductService productService;
 
-    @Inject
+    @Autowired
     private TaxService taxService;
 
-    @Inject
+    @Autowired
     private CustomerService customerService;
 
-    @Inject
+    @Autowired
     private ShoppingCartService shoppingCartService;
 
-    @Inject
+    @Autowired
     private TransactionService transactionService;
 
-    @Inject
+    @Autowired
     private OrderTotalService orderTotalService;
 
     private final OrderRepository orderRepository;
 
-    @Inject
+    @Autowired
     public OrderServiceImpl(OrderRepository orderRepository) {
         super(orderRepository);
         this.orderRepository = orderRepository;

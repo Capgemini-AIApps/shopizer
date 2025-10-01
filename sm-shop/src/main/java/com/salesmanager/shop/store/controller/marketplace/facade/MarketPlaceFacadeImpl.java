@@ -6,7 +6,7 @@ import com.salesmanager.shop.store.api.exception.ConversionRuntimeException;
 import com.salesmanager.shop.store.api.exception.ResourceNotFoundException;
 import com.salesmanager.shop.store.api.exception.ServiceRuntimeException;
 import java.util.Optional;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Component;
 
@@ -24,10 +24,10 @@ import com.salesmanager.shop.store.controller.store.facade.StoreFacade;
 @Component
 public class MarketPlaceFacadeImpl implements MarketPlaceFacade {
 
-	@Inject
+	@Autowired
 	private StoreFacade storeFacade;
 
-	@Inject
+	@Autowired
 	private OptinService optinService;
 
 	@Override

@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -42,7 +42,7 @@ public class Stripe3Payment implements PaymentModule {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(Stripe3Payment.class);
 
-	@Inject
+	@Autowired
 	private ProductPriceUtils productPriceUtils;
 
 	private final static String AUTHORIZATION = "Authorization";

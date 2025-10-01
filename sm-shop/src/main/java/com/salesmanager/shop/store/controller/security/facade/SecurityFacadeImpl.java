@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.jsoup.helper.Validate;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -26,13 +26,13 @@ public class SecurityFacadeImpl implements SecurityFacade {
   
   private Pattern userPasswordPattern = Pattern.compile(USER_PASSWORD_PATTERN);
 
-  @Inject
+  @Autowired
   private PermissionService permissionService;
 
-  @Inject
+  @Autowired
   private GroupService groupService;
   
-  @Inject
+  @Autowired
   private PasswordEncoder passwordEncoder;
 
   @SuppressWarnings({"rawtypes", "unchecked"})

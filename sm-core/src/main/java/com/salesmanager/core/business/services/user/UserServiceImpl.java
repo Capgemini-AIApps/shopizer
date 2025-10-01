@@ -1,7 +1,7 @@
 package com.salesmanager.core.business.services.user;
 
 import java.util.List;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.helper.Validate;
@@ -31,7 +31,7 @@ public class UserServiceImpl extends SalesManagerEntityServiceImpl<Long, User> i
 	@Autowired
 	private PageableUserRepository pageableUserRepository;
 
-	@Inject
+	@Autowired
 	public UserServiceImpl(UserRepository userRepository) {
 		super(userRepository);
 		this.userRepository = userRepository;

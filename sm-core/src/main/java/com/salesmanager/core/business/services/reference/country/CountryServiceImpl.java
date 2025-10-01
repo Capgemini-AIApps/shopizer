@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,11 +29,11 @@ public class CountryServiceImpl extends SalesManagerEntityServiceImpl<Integer, C
 	
 	private CountryRepository countryRepository;
 	
-	@Inject
+	@Autowired
 	private CacheUtils cache;
 
 	
-	@Inject
+	@Autowired
 	public CountryServiceImpl(CountryRepository countryRepository) {
 		super(countryRepository);
 		this.countryRepository = countryRepository;

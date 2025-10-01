@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.Validate;
 import org.springframework.data.domain.Page;
@@ -33,10 +33,10 @@ public class ProductAvailabilityServiceImpl extends SalesManagerEntityServiceImp
 
 	private ProductAvailabilityRepository productAvailabilityRepository;
 
-	@Inject
+	@Autowired
 	private PageableProductAvailabilityRepository pageableProductAvailabilityRepository;
 
-	@Inject
+	@Autowired
 	public ProductAvailabilityServiceImpl(ProductAvailabilityRepository productAvailabilityRepository) {
 		super(productAvailabilityRepository);
 		this.productAvailabilityRepository = productAvailabilityRepository;

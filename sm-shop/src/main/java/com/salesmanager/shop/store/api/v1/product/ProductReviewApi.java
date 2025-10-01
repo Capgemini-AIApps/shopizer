@@ -2,10 +2,10 @@ package com.salesmanager.shop.store.api.v1.product;
 
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,11 +37,11 @@ import springfox.documentation.annotations.ApiIgnore;
 @RequestMapping("/api/v1")
 public class ProductReviewApi {
 
-  @Inject private ProductCommonFacade productCommonFacade;
+  @Autowired private ProductCommonFacade productCommonFacade;
 
-  @Inject private ProductService productService;
+  @Autowired private ProductService productService;
 
-  @Inject private ProductReviewService productReviewService;
+  @Autowired private ProductReviewService productReviewService;
 
   private static final Logger LOGGER = LoggerFactory.getLogger(ProductReviewApi.class);
 

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -34,18 +34,18 @@ public class CategoryServiceImpl extends SalesManagerEntityServiceImpl<Long, Cat
 
   private CategoryRepository categoryRepository;
 
-  @Inject
+  @Autowired
   private ProductService productService;
   
-  @Inject
+  @Autowired
   private PageableCategoryRepository pageableCategoryRepository;
   
-  @Inject
+  @Autowired
   private CategoryDescriptionRepository categoryDescriptionRepository;
 
 
 
-  @Inject
+  @Autowired
   public CategoryServiceImpl(CategoryRepository categoryRepository) {
     super(categoryRepository);
     this.categoryRepository = categoryRepository;

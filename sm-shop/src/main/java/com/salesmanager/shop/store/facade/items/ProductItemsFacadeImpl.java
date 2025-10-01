@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.Validate;
@@ -35,17 +35,17 @@ import com.salesmanager.shop.utils.ImageFilePath;
 public class ProductItemsFacadeImpl implements ProductItemsFacade {
 	
 	
-	@Inject
+	@Autowired
 	ProductService productService;
 	
-	@Inject
+	@Autowired
 	PricingService pricingService;
 	
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 	
-	@Inject
+	@Autowired
 	private ProductRelationshipService productRelationshipService;
 
 	@Override

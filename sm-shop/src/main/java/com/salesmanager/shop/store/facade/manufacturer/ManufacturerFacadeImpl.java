@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.jsoup.helper.Validate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -32,7 +32,7 @@ import com.salesmanager.shop.store.controller.manufacturer.facade.ManufacturerFa
 @Service("manufacturerFacade")
 public class ManufacturerFacadeImpl implements ManufacturerFacade {
 
-  @Inject
+  @Autowired
   private Mapper<Manufacturer, ReadableManufacturer> readableManufacturerConverter;
 
 
@@ -42,7 +42,7 @@ public class ManufacturerFacadeImpl implements ManufacturerFacade {
   @Autowired
   private CategoryService categoryService;
   
-  @Inject
+  @Autowired
   private LanguageService languageService;
 
   @Override

@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.jsoup.helper.Validate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,10 +62,10 @@ public class CustomerFacadeImpl implements CustomerFacade {
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 
-	@Inject
+	@Autowired
 	private LabelUtils messages;
 
-	@Inject
+	@Autowired
 	private PasswordEncoder passwordEncoder;
 
 	private static final String resetCustomerLink = "customer/%s/reset/%s"; // front

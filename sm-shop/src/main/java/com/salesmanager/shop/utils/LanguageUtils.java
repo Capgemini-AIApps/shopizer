@@ -5,9 +5,9 @@ import static com.salesmanager.core.business.constants.Constants.DEFAULT_STORE;
 import java.util.Locale;
 import java.util.Optional;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.commons.logging.Log;
@@ -34,7 +34,7 @@ public class LanguageUtils {
 
   private static final String ALL_LANGUALES = "_all";
 
-  @Inject
+  @Autowired
   LanguageService languageService;
   
   @Autowired

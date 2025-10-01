@@ -1,8 +1,8 @@
 package com.salesmanager.shop.store.api.v1.customer;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -41,7 +41,7 @@ public class ResetCustomerPasswordApi {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ResetCustomerPasswordApi.class);
 
-	@Inject
+	@Autowired
 	private com.salesmanager.shop.store.controller.customer.facade.v1.CustomerFacade customerFacade;
 
 	/**

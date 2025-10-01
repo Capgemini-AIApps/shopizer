@@ -16,8 +16,8 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
-import javax.persistence.NoResultException;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.persistence.NoResultException;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -72,23 +72,23 @@ public class ShoppingCartFacadeImpl implements ShoppingCartFacade {
 
 	private static final Logger LOG = LoggerFactory.getLogger(ShoppingCartFacadeImpl.class);
 
-	@Inject
+	@Autowired
 	private ShoppingCartService shoppingCartService;
 
-	@Inject
+	@Autowired
 	private ShoppingCartCalculationService shoppingCartCalculationService;
 
 
-	@Inject
+	@Autowired
 	private ProductService productService;
 
-	@Inject
+	@Autowired
 	private PricingService pricingService;
 
-	@Inject
+	@Autowired
 	private ProductAttributeService productAttributeService;
 
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -22,7 +22,7 @@ import com.salesmanager.core.model.system.IntegrationModule;
 @Ignore
 public class ShippingMethodDecisionTest extends com.salesmanager.test.common.AbstractSalesManagerCoreTestCase {
 	
-	@Inject
+	@Autowired
 	ShippingDecisionPreProcessorImpl shippingMethodDecisionProcess;
 
 	@Test

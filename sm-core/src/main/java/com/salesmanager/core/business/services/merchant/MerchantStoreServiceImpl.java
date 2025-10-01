@@ -3,7 +3,7 @@ package com.salesmanager.core.business.services.merchant;
 import java.util.List;
 import java.util.Optional;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.jsoup.helper.Validate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ import com.salesmanager.core.model.merchant.MerchantStoreCriteria;
 public class MerchantStoreServiceImpl extends SalesManagerEntityServiceImpl<Integer, MerchantStore>
 		implements MerchantStoreService {
 
-	@Inject
+	@Autowired
 	protected ProductTypeService productTypeService;
 
 	@Autowired
@@ -33,7 +33,7 @@ public class MerchantStoreServiceImpl extends SalesManagerEntityServiceImpl<Inte
 
 	private MerchantRepository merchantRepository;
 
-	@Inject
+	@Autowired
 	public MerchantStoreServiceImpl(MerchantRepository merchantRepository) {
 		super(merchantRepository);
 		this.merchantRepository = merchantRepository;

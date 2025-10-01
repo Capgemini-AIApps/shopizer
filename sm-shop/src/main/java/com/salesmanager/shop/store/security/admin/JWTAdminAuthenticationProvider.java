@@ -1,6 +1,6 @@
 package com.salesmanager.shop.store.security.admin;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -23,7 +23,7 @@ public class JWTAdminAuthenticationProvider extends DaoAuthenticationProvider {
     @Autowired
     private UserDetailsService jwtAdminDetailsService;
     
-    @Inject
+    @Autowired
     private PasswordEncoder passwordEncoder;
 
 	public UserDetailsService getJwtAdminDetailsService() {

@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -36,10 +36,10 @@ import springfox.documentation.annotations.ApiIgnore;
 		@Tag(name = "Order status history resource", description = "Related to OrderManagement api") })
 public class OrderStatusHistoryApi {
 
-	@Inject
+	@Autowired
 	private OrderFacade orderFacade;
 
-	@Inject
+	@Autowired
 	private AuthorizationUtils authorizationUtils;
 
 	@RequestMapping(value = { "private/orders/{id}/history" }, method = RequestMethod.GET)

@@ -3,8 +3,8 @@ package com.salesmanager.shop.store.api.v2.product;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.validation.Valid;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -66,7 +66,7 @@ public class ProductVariantApi {
 	@Autowired
 	private ProductVariantFacade productVariantFacade;
 
-	@Inject
+	@Autowired
 	private UserFacade userFacade;
 
 	@ResponseStatus(HttpStatus.CREATED)

@@ -4,9 +4,9 @@ import java.security.Principal;
 import java.util.List;
 import java.util.Locale;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -55,17 +55,17 @@ public class OrderShippingApi {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(OrderShippingApi.class);
 
-  @Inject private CustomerService customerService;
+  @Autowired private CustomerService customerService;
 
-  @Inject private OrderFacade orderFacade;
+  @Autowired private OrderFacade orderFacade;
 
-  @Inject private ShoppingCartFacade shoppingCartFacade;
+  @Autowired private ShoppingCartFacade shoppingCartFacade;
 
-  @Inject private LabelUtils messages;
+  @Autowired private LabelUtils messages;
 
-  @Inject private PricingService pricingService;
+  @Autowired private PricingService pricingService;
   
-  @Inject private CountryService countryService;
+  @Autowired private CountryService countryService;
 
   /**
    * Get shipping quote for a given shopping cart

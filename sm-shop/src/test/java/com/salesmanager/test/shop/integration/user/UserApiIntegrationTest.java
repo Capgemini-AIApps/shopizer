@@ -1,7 +1,7 @@
 package com.salesmanager.test.shop.integration.user;
 
 import static org.junit.Assert.assertNotNull;
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -27,7 +27,7 @@ public class UserApiIntegrationTest extends ServicesTestSupport {
   private static String CREATED_PASSWORD = "Password1";
   private static String NEW_CREATED_PASSWORD = "Password2";
   
-  @Inject
+  @Autowired
   private TestRestTemplate testRestTemplate;
   
   @Test

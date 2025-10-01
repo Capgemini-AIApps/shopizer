@@ -3,7 +3,7 @@ package com.salesmanager.core.business.services.customer.review;
 import java.math.BigDecimal;
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.Validate;
 import org.springframework.stereotype.Service;
@@ -21,10 +21,10 @@ public class CustomerReviewServiceImpl extends
 	
 	private CustomerReviewRepository customerReviewRepository;
 	
-	@Inject
+	@Autowired
 	private CustomerService customerService;
 	
-	@Inject
+	@Autowired
 	public CustomerReviewServiceImpl(
 			CustomerReviewRepository customerReviewRepository) {
 			super(customerReviewRepository);

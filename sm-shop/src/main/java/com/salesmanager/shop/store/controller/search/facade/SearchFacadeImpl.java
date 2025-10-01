@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.jsoup.helper.Validate;
 import org.slf4j.Logger;
@@ -43,19 +43,19 @@ public class SearchFacadeImpl implements SearchFacade {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(SearchFacadeImpl.class);
 
-	@Inject
+	@Autowired
 	private SearchService searchService;
 
-	@Inject
+	@Autowired
 	private ProductService productService;
 
-	@Inject
+	@Autowired
 	private CategoryService categoryService;
 
-	@Inject
+	@Autowired
 	private PricingService pricingService;
 
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 

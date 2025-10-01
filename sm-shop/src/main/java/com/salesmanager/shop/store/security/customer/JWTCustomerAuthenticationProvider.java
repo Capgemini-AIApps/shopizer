@@ -1,6 +1,6 @@
 package com.salesmanager.shop.store.security.customer;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,10 +18,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  */
 public class JWTCustomerAuthenticationProvider extends DaoAuthenticationProvider {
 	
-    @Inject
+    @Autowired
     private UserDetailsService jwtCustomerDetailsService;
     
-    @Inject
+    @Autowired
     private PasswordEncoder passwordEncoder;
 
 

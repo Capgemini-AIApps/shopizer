@@ -1,6 +1,6 @@
 package com.salesmanager.shop.store.api.v1.configurations;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,10 +27,10 @@ public class CacheApi {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(CacheApi.class);
 
-  @Inject
+  @Autowired
   private StoreFacade storeFacade;
 
-  @Inject
+  @Autowired
   private CacheUtils cache;
 
   @DeleteMapping(value = "/auth/cache/store/{storeId}/clear")

@@ -3,12 +3,12 @@ package com.salesmanager.shop.utils;
 import com.salesmanager.core.business.utils.CacheUtils;
 import org.springframework.stereotype.Component;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Component
 public class WebApplicationCacheUtils {
 	
-	@Inject
+	@Autowired
 	private CacheUtils cache;
 	
 	public Object getFromCache(String key) throws Exception {

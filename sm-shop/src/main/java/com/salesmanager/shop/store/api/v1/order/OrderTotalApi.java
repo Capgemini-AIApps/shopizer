@@ -3,9 +3,9 @@ package com.salesmanager.shop.store.api.v1.order;
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -47,17 +47,17 @@ import springfox.documentation.annotations.ApiIgnore;
 })
 public class OrderTotalApi {
 
-  @Inject private ShoppingCartFacade shoppingCartFacade;
+  @Autowired private ShoppingCartFacade shoppingCartFacade;
 
-  @Inject private LabelUtils messages;
+  @Autowired private LabelUtils messages;
 
-  @Inject private PricingService pricingService;
+  @Autowired private PricingService pricingService;
 
-  @Inject private CustomerService customerService;
+  @Autowired private CustomerService customerService;
 
-  @Inject private ShippingQuoteService shippingQuoteService;
+  @Autowired private ShippingQuoteService shippingQuoteService;
 
-  @Inject private OrderService orderService;
+  @Autowired private OrderService orderService;
 
   private static final Logger LOGGER = LoggerFactory.getLogger(OrderTotalApi.class);
 

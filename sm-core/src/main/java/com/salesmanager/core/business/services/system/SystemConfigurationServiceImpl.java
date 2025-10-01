@@ -1,6 +1,6 @@
 package com.salesmanager.core.business.services.system;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
@@ -17,7 +17,7 @@ public class SystemConfigurationServiceImpl extends
 	
 	private SystemConfigurationRepository systemConfigurationReposotory;
 	
-	@Inject
+	@Autowired
 	public SystemConfigurationServiceImpl(
 			SystemConfigurationRepository systemConfigurationReposotory) {
 			super(systemConfigurationReposotory);

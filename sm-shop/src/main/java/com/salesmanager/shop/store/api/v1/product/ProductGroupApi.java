@@ -1,8 +1,8 @@
 package com.salesmanager.shop.store.api.v1.product;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,7 +27,7 @@ import com.salesmanager.shop.model.catalog.product.ReadableProductList;
 import com.salesmanager.shop.model.catalog.product.group.ProductGroup;
 import com.salesmanager.shop.store.controller.items.facade.ProductItemsFacade;
 
-import antlr.collections.List;
+import java.util.List;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -48,9 +48,9 @@ import springfox.documentation.annotations.ApiIgnore;
 		@Tag(name = "Product groups management resource", description = "Product groups management") })
 public class ProductGroupApi {
 
-  @Inject private ProductService productService;
+  @Autowired private ProductService productService;
 
-  @Inject private ProductItemsFacade productItemsFacade;
+  @Autowired private ProductItemsFacade productItemsFacade;
 
   private static final Logger LOGGER = LoggerFactory.getLogger(ProductGroupApi.class);
 

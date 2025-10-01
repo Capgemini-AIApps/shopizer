@@ -7,9 +7,9 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -63,7 +63,7 @@ public class UserApi {
 	private static final Logger LOGGER = LoggerFactory.getLogger(UserApi.class);
 
 
-	@Inject
+	@Autowired
 	private UserFacade userFacade;
 
 	/**

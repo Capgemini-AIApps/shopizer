@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.slf4j.Logger;
@@ -73,17 +73,17 @@ import springfox.documentation.annotations.ApiIgnore;
 public class ProductVariationApi {
 
 
-  @Inject private PricingService pricingService;
+  @Autowired private PricingService pricingService;
 
-  @Inject private ProductService productService;
+  @Autowired private ProductService productService;
   
-  @Inject private CategoryFacade categoryFacade;
+  @Autowired private CategoryFacade categoryFacade;
   
-  @Inject private ProductVariationFacade productVariationFacade;
+  @Autowired private ProductVariationFacade productVariationFacade;
 	
 
 
-  @Inject
+  @Autowired
   @Qualifier("img")
   private ImageFilePath imageUtils;
 

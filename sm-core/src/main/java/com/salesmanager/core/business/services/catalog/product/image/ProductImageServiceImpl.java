@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.helper.Validate;
@@ -35,13 +35,13 @@ public class ProductImageServiceImpl extends SalesManagerEntityServiceImpl<Long,
 
 	private ProductImageRepository productImageRepository;
 
-	@Inject
+	@Autowired
 	public ProductImageServiceImpl(ProductImageRepository productImageRepository) {
 		super(productImageRepository);
 		this.productImageRepository = productImageRepository;
 	}
 
-	@Inject
+	@Autowired
 	private ProductFileManager productFileManager;
 	
 	@Autowired
@@ -58,7 +58,7 @@ public class ProductImageServiceImpl extends SalesManagerEntityServiceImpl<Long,
 		try {
 			for (ProductImage productImage : productImages) {
 
-				Assert.notNull(productImage.getImage());
+				Assert.notNull(productImage.getImage(), "Product image cannot be null");
 
 				InputStream inputStream = productImage.getImage();
 				ImageContentFile cmsContentImage = new ImageContentFile();

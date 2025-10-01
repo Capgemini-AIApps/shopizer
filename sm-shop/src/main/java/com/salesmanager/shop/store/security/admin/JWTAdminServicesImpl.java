@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.slf4j.Logger;
@@ -36,11 +36,11 @@ public class JWTAdminServicesImpl implements UserDetailsService{
 	private static final Logger LOGGER = LoggerFactory.getLogger(JWTAdminServicesImpl.class);
 	
 	
-	@Inject
+	@Autowired
 	private UserService userService;
-	@Inject
+	@Autowired
 	private PermissionService  permissionService;
-	@Inject
+	@Autowired
 	private GroupService   groupService;
 	
 	public final static String ROLE_PREFIX = "ROLE_";//Spring Security 4

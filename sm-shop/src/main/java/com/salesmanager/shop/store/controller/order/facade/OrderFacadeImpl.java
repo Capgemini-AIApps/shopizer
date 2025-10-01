@@ -18,7 +18,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -115,33 +115,33 @@ public class OrderFacadeImpl implements OrderFacade {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(OrderFacadeImpl.class);
 
-	@Inject
+	@Autowired
 	private OrderService orderService;
-	@Inject
+	@Autowired
 	private ProductService productService;
-	@Inject
+	@Autowired
 	private ProductAttributeService productAttributeService;
-	@Inject
+	@Autowired
 	private ShoppingCartService shoppingCartService;
-	@Inject
+	@Autowired
 	private DigitalProductService digitalProductService;
-	@Inject
+	@Autowired
 	private ShippingService shippingService;
-	@Inject
+	@Autowired
 	private CustomerFacade customerFacade;
-	@Inject
+	@Autowired
 	private PricingService pricingService;
-	@Inject
+	@Autowired
 	private ShoppingCartFacade shoppingCartFacade;
-	@Inject
+	@Autowired
 	private ShippingQuoteService shippingQuoteService;
-	@Inject
+	@Autowired
 	private CoreConfiguration coreConfiguration;
-	@Inject
+	@Autowired
 	private PaymentService paymentService;
-	@Inject
+	@Autowired
 	private CountryService countryService;
-	@Inject
+	@Autowired
 	private ZoneService zoneService;
 
 
@@ -157,16 +157,16 @@ public class OrderFacadeImpl implements OrderFacade {
 	@Autowired
 	private TransactionService transactionService;
 
-	@Inject
+	@Autowired
 	private EmailTemplatesUtils emailTemplatesUtils;
 
-	@Inject
+	@Autowired
 	private LabelUtils messages;
 	
 	@Autowired
 	private ProductPriceUtils productPriceUtils;
 
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 

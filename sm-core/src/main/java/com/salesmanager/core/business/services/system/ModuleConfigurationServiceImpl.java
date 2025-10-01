@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -35,18 +35,18 @@ public class ModuleConfigurationServiceImpl extends SalesManagerEntityServiceImp
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ModuleConfigurationServiceImpl.class);
 
-	@Inject
+	@Autowired
 	private IntegrationModulesLoader integrationModulesLoader;
 
 	private ModuleConfigurationRepository moduleConfigurationRepository;
 
-	@Inject
+	@Autowired
 	private CacheUtils cache;
 
 	@Autowired(required = false)
 	private List<ModuleStarter> payments = null; // all bound payment module starters if any
 
-	@Inject
+	@Autowired
 	public ModuleConfigurationServiceImpl(ModuleConfigurationRepository moduleConfigurationRepository) {
 		super(moduleConfigurationRepository);
 		this.moduleConfigurationRepository = moduleConfigurationRepository;

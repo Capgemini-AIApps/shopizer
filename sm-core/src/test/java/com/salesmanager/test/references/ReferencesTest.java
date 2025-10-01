@@ -2,7 +2,7 @@ package com.salesmanager.test.references;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.junit.Ignore;
 import org.junit.runner.RunWith;
@@ -24,10 +24,10 @@ public class ReferencesTest {
 	
 
 	
-	@Inject
+	@Autowired
 	LanguageService languageService;
 	
-	@Inject
+	@Autowired
 	CountryService countryService;
 	
 	//@Test

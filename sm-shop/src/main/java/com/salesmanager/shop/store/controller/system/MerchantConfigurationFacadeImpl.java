@@ -7,7 +7,7 @@ import static com.salesmanager.shop.constants.Constants.KEY_PINTEREST_PAGE_URL;
 
 import java.util.Optional;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -31,7 +31,7 @@ public class MerchantConfigurationFacadeImpl implements MerchantConfigurationFac
   private static final Logger LOGGER = LoggerFactory
       .getLogger(MerchantConfigurationFacadeImpl.class);
 
-  @Inject
+  @Autowired
   private MerchantConfigurationService merchantConfigurationService;
 
   @Value("${config.displayShipping}")

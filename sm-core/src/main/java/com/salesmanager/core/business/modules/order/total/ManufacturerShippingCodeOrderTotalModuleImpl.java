@@ -38,7 +38,7 @@ public class ManufacturerShippingCodeOrderTotalModuleImpl implements OrderTotalP
 	
 	//private KnowledgeBase kbase;//injected from xml file
 	
-	//@Inject
+	//@Autowired
 	//KieContainer kieManufacturerBasedPricingContainer;
 	
 

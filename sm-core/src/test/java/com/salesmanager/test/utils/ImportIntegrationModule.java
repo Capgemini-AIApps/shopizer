@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.junit.Ignore;
 import org.junit.runner.RunWith;
@@ -29,11 +29,11 @@ import com.salesmanager.test.configuration.ConfigurationTest;
 @Ignore
 public class ImportIntegrationModule  {
 
-	@Inject
+	@Autowired
 	private IntegrationModulesLoader integrationModulesLoader;
 	
 	
-	@Inject
+	@Autowired
 	private ModuleConfigurationService moduleCongigurationService;
 	
 	/**

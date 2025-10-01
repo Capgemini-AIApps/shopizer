@@ -2,7 +2,7 @@ package com.salesmanager.core.business.services.catalog.product.type;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -27,7 +27,7 @@ public class ProductTypeServiceImpl extends SalesManagerEntityServiceImpl<Long, 
 	@Autowired
 	private PageableProductTypeRepository pageableProductTypeRepository;
 
-	@Inject
+	@Autowired
 	public ProductTypeServiceImpl(ProductTypeRepository productTypeRepository) {
 		super(productTypeRepository);
 		this.productTypeRepository = productTypeRepository;

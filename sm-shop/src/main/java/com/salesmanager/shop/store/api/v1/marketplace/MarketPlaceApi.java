@@ -1,6 +1,6 @@
 package com.salesmanager.shop.store.api.v1.marketplace;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -41,10 +41,10 @@ public class MarketPlaceApi {
 	@Autowired
 	private UserFacade userFacade;
 
-	@Inject
+	@Autowired
 	private StoreFacade storeFacade;
 
-	@Inject
+	@Autowired
 	private LanguageUtils languageUtils;
 
 	/**

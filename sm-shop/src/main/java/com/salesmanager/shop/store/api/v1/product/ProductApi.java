@@ -6,10 +6,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -74,19 +74,19 @@ import springfox.documentation.annotations.ApiIgnore;
 		@Tag(name = "Product definition  resource, add product to category", description = "View product, Add product, edit product and delete product") })
 public class ProductApi {
 
-	@Inject
+	@Autowired
 	private CategoryService categoryService;
 
-	@Inject
+	@Autowired
 	private ProductService productService;
 
 	@Autowired
 	private ProductFacade productFacade;
 
-	@Inject
+	@Autowired
 	private ProductCommonFacade productCommonFacade;
 
-	@Inject
+	@Autowired
 	@Qualifier("img")
 	private ImageFilePath imageUtils;
 

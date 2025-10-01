@@ -2,7 +2,7 @@ package com.salesmanager.shop.store.api.v1.search;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -38,7 +38,7 @@ import springfox.documentation.annotations.ApiIgnore;
 })
 public class SearchApi {
 
-  @Inject private SearchFacade searchFacade;
+  @Autowired private SearchFacade searchFacade;
 
 
   /**
