@@ -27,6 +27,10 @@ public class ShopServletContextListener implements ServletContextListener {
 	public void contextDestroyed(ServletContextEvent servletContextEvent) {
 		logger.info("===context destroy===");
 		VendorCacheManager cacheManager = VendorCacheManager.getInstance();
-		cacheManager.getManager().stop();
+		if (cacheManager.getManager() != null) {
+			cacheManager.getManager().stop();
+		} else {
+			logger.warn("VendorCacheManager is null, skipping cache manager shutdown");
+		}
 	}
 }
