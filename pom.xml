@@ -59,7 +59,8 @@
 		<javax.servlet-api-version>3.0.1</javax.servlet-api-version>
 		<javax.annotation>1.3.2</javax.annotation>
 		<jakarta.inject.version>2.0.1</jakarta.inject.version>
-		<hibernate-ehcache.version>5.6.15.Final</hibernate-ehcache.version>
+		<ehcache.version>3.10.8</ehcache.version>
+		<cache-api.version>1.1.1</cache-api.version>
 		<httpclient.version>4.5.14</httpclient.version>
 		<javax.validation.version>2.0.1.Final</javax.validation.version>
 		<jakarta.validation.version>3.0.2</jakarta.validation.version>
@@ -94,10 +95,6 @@
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-web</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-cache</artifactId>
 			</dependency>
 			<dependency>
 				<groupId>com.shopizer</groupId>
@@ -380,11 +377,17 @@
 				<version>${javax.annotation}</version>
 			</dependency>
 
-			<!-- Missing dependencies -->
+			<!-- EhCache 3.x for Spring Boot 3.x -->
 			<dependency>
-				<groupId>org.hibernate</groupId>
-				<artifactId>hibernate-ehcache</artifactId>
-				<version>${hibernate-ehcache.version}</version>
+				<groupId>org.ehcache</groupId>
+				<artifactId>ehcache</artifactId>
+				<version>${ehcache.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.cache</groupId>
+				<artifactId>cache-api</artifactId>
+				<version>${cache-api.version}</version>
 			</dependency>
 
 			<dependency>
