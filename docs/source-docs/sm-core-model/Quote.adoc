@@ -1,0 +1,76 @@
+= Quote
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/shipping/Quote.java`
+
+*Package:* `com.salesmanager.core.model.shipping`
+
+*Type:*  class
+
+*Description:* Shipping quote received from external shipping quote module or calculated internally
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.shipping` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.math.BigDecimal`
+* `java.util.Date`
+* `javax.persistence.Column`
+* `javax.persistence.Embedded`
+* `javax.persistence.Entity`
+* `javax.persistence.GeneratedValue`
+* `javax.persistence.GenerationType`
+* `javax.persistence.Id`
+* `javax.persistence.Table`
+* `javax.persistence.TableGenerator`
+
+*Application Imports:*
+
+* `com.salesmanager.core.constants.SchemaConstant`
+* `com.salesmanager.core.model.common.Delivery`
+* `com.salesmanager.core.model.generic.SalesManagerEntity`
+
+== Methods
+
+This class contains 32 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Long |getOrderId()
+|public |void |setOrderId()
+|public |Long |getCustomerId()
+|public |void |setCustomerId()
+|public |String |getModule()
+|public |void |setModule()
+|public |String |getOptionName()
+|public |void |setOptionName()
+|public |String |getOptionCode()
+|public |void |setOptionCode()
+|public |Date |getOptionDeliveryDate()
+|public |void |setOptionDeliveryDate()
+|public |Date |getOptionShippingDate()
+|public |void |setOptionShippingDate()
+|public |Date |getQuoteDate()
+|public |void |setQuoteDate()
+|public |Integer |getEstimatedNumberOfDays()
+|public |void |setEstimatedNumberOfDays()
+|public |BigDecimal |getPrice()
+|public |void |setPrice()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/shipping/Quote.java`
+

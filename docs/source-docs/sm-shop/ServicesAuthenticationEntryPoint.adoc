@@ -1,0 +1,53 @@
+= ServicesAuthenticationEntryPoint
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/security/ServicesAuthenticationEntryPoint.java`
+
+*Package:* `com.salesmanager.shop.store.security`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.security` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `javax.servlet.http.HttpServletRequest`
+* `javax.servlet.http.HttpServletResponse`
+* `java.io.IOException`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.InitializingBean`
+* `org.springframework.core.Ordered`
+* `org.springframework.security.core.AuthenticationException`
+* `org.springframework.security.web.AuthenticationEntryPoint`
+
+== Methods
+
+This class contains 3 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |void |commence()
+|public |int |getOrder()
+|public |void |afterPropertiesSet()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/security/ServicesAuthenticationEntryPoint.java`
+

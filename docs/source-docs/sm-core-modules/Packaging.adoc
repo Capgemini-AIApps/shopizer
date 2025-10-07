@@ -1,0 +1,38 @@
+= Packaging
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/shipping/model/Packaging.java`
+
+*Package:* `com.salesmanager.core.modules.integration.shipping.model`
+
+*Type:*  interface
+
+*Description:* No description available
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.modules.integration.shipping.model` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.shipping.PackageDetails`
+* `com.salesmanager.core.model.shipping.ShippingProduct`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/shipping/model/Packaging.java`
+

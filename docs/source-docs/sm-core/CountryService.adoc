@@ -1,0 +1,40 @@
+= CountryService
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryService.java`
+
+*Package:* `com.salesmanager.core.business.services.reference.country`
+
+*Type:*  interface
+
+*Description:* List country - zone objects by language
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.business.services.reference.country` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+* `java.util.Map`
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityService`
+* `com.salesmanager.core.model.reference.country.Country`
+* `com.salesmanager.core.model.reference.country.CountryDescription`
+* `com.salesmanager.core.model.reference.language.Language`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryService.java`
+

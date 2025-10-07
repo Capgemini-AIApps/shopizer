@@ -1,0 +1,62 @@
+= responsible
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartCalculationServiceImpl.java`
+
+*Package:* `com.salesmanager.core.business.services.shoppingcart`
+
+*Type:*  class
+
+*Description:* 
+
+== Overview
+
+This class is part of the `com.salesmanager.core.business.services.shoppingcart` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.apache.commons.lang3.Validate`
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.order.OrderService`
+* `com.salesmanager.core.business.services.order.OrderServiceImpl`
+* `com.salesmanager.core.model.customer.Customer`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.order.OrderTotalSummary`
+* `com.salesmanager.core.model.reference.language.Language`
+
+== Methods
+
+This class contains 4 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |OrderTotalSummary |calculate()
+|public |OrderTotalSummary |calculate()
+|public |ShoppingCartService |getShoppingCartService()
+|private |void |updateCartModel()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartCalculationServiceImpl.java`
+

@@ -1,0 +1,57 @@
+= CustomerOptinServiceImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/customer/optin/CustomerOptinServiceImpl.java`
+
+*Package:* `com.salesmanager.core.business.services.customer.optin`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.business.services.customer.optin` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.apache.commons.lang3.Validate`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.repositories.customer.optin.CustomerOptinRepository`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityServiceImpl`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.system.optin.CustomerOptin`
+
+== Methods
+
+This class contains 3 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |void |optinCumtomer()
+|public |void |optoutCumtomer()
+|public |CustomerOptin |findByEmailAddress()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/customer/optin/CustomerOptinServiceImpl.java`
+

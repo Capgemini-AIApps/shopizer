@@ -1,0 +1,71 @@
+= CustomerOptionValue
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerOptionValue.java`
+
+*Package:* `com.salesmanager.core.model.customer.attribute`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.customer.attribute` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.HashSet`
+* `java.util.List`
+* `java.util.Set`
+* `javax.persistence.CascadeType`
+* `javax.persistence.Column`
+* `javax.persistence.Entity`
+* `javax.persistence.FetchType`
+* `javax.persistence.GeneratedValue`
+* `javax.persistence.GenerationType`
+
+*Application Imports:*
+
+* `com.fasterxml.jackson.annotation.JsonIgnore`
+* `com.salesmanager.core.constants.SchemaConstant`
+* `com.salesmanager.core.model.generic.SalesManagerEntity`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+
+== Methods
+
+This class contains 14 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Long |getId()
+|public |void |setId()
+|public |void |setDescriptions()
+|public |MerchantStore |getMerchantStore()
+|public |void |setMerchantStore()
+|public |void |setDescriptionsList()
+|public |void |setImage()
+|public |MultipartFile |getImage()
+|public |String |getCustomerOptionValueImage()
+|public |void |setCustomerOptionValueImage()
+|public |String |getCode()
+|public |void |setCode()
+|public |void |setSortOrder()
+|public |Integer |getSortOrder()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerOptionValue.java`
+

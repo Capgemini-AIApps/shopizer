@@ -1,0 +1,89 @@
+= ContentFacadeImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/facade/content/ContentFacadeImpl.java`
+
+*Package:* `com.salesmanager.shop.store.facade.content`
+
+*Type:*  class
+
+*Description:* contentDescription.setMetatagDescription(objectContent.getMetaDescription()); contentDescription.setTitle(objectContent.getTitle()); contentDescription.setName(objectContent.getName());
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.facade.content` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.io.ByteArrayInputStream`
+* `java.io.IOException`
+* `java.io.InputStream`
+* `java.net.URLEncoder`
+* `java.util.ArrayList`
+* `java.util.List`
+* `java.util.Optional`
+* `java.util.stream.Collectors`
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.annotation.Qualifier`
+* `org.springframework.data.domain.Page`
+* `org.springframework.stereotype.Component`
+* `org.springframework.util.CollectionUtils`
+
+*Application Imports:*
+
+* `org.apache.commons.lang3.StringUtils`
+* `org.jsoup.helper.Validate`
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.content.ContentService`
+* `com.salesmanager.core.business.services.reference.language.LanguageService`
+* `com.salesmanager.core.model.content.Content`
+* `com.salesmanager.core.model.content.ContentDescription`
+* `com.salesmanager.core.model.content.ContentType`
+
+== Methods
+
+This class contains 33 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |ContentFolder |getContentFolder()
+|private |ContentImage |convertToContentImage()
+|public |String |absolutePath()
+|public |void |delete()
+|private |ReadableContentPage |contentDescriptionToReadableContent()
+|private |ReadableContentFull |convertContentToReadableContentFull()
+|private |ReadableContentEntity |convertContentToReadableContentEntity()
+|private |Content |convertContentPageToContent()
+|private |Content |convertContentBoxToContent()
+|private |Content |convertContentPageToContent()
+|private |ContentDescriptionEntity |create()
+|private |void |setContentDescriptionToContentModel()
+|public |ReadableContentPage |getContentPage()
+|public |void |addContentFile()
+|private |FileContentType |getFileContentType()
+|private |ReadableContentBox |convertContentToReadableContentBox()
+|private |void |setDescription()
+|private |ReadableContentPage |convertContentToReadableContentPage()
+|private |ReadableContentBox |convertContentToReadableLegacyContentBox()
+|public |ReadableContentBox |getContentBox()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/facade/content/ContentFacadeImpl.java`
+

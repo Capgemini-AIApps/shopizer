@@ -1,0 +1,96 @@
+= UserFacadeImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java`
+
+*Package:* `com.salesmanager.shop.store.facade.user`
+
+*Type:*  class
+
+*Description:* validate password
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.facade.user` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.Date`
+* `java.util.List`
+* `java.util.Locale`
+* `java.util.Map`
+* `java.util.Optional`
+* `java.util.Set`
+* `java.util.UUID`
+* `java.util.stream.Collectors`
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.annotation.Autowired`
+* `org.springframework.beans.factory.annotation.Qualifier`
+* `org.springframework.data.domain.Page`
+* `org.springframework.scheduling.annotation.Async`
+* `org.springframework.security.authentication.AnonymousAuthenticationToken`
+* `org.springframework.security.core.Authentication`
+* `org.springframework.security.core.context.SecurityContextHolder`
+* `org.springframework.security.crypto.password.PasswordEncoder`
+* `org.springframework.stereotype.Service`
+* `org.springframework.util.CollectionUtils`
+
+*Application Imports:*
+
+* `org.apache.commons.lang3.StringUtils`
+* `org.apache.commons.lang3.Validate`
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.exception.ConversionException`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.modules.email.Email`
+* `com.salesmanager.core.business.services.merchant.MerchantStoreService`
+* `com.salesmanager.core.business.services.reference.language.LanguageService`
+* `com.salesmanager.core.business.services.system.EmailService`
+
+== Methods
+
+This class contains 30 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |ReadableUser |findByUserName()
+|private |ReadableUser |findByUserName()
+|private |ReadableUser |convertUserToReadableUser()
+|private |User |converPersistabletUserToUser()
+|private |User |getByUserName()
+|private |User |getByUserName()
+|private |User |getByUserId()
+|private |User |getByUserId()
+|private |ReadablePermission |convertPermissionToReadablePermission()
+|public |boolean |authorizedStore()
+|public |void |authorizedGroup()
+|public |String |authenticatedUser()
+|public |ReadableUser |create()
+|public |ReadableUserList |getByCriteria()
+|public |void |delete()
+|public |ReadableUser |update()
+|public |void |changePassword()
+|public |ReadableUserList |listByCriteria()
+|public |void |authorizedGroups()
+|public |boolean |userInRoles()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java`
+

@@ -1,0 +1,60 @@
+= PaymentModule
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/payment/model/PaymentModule.java`
+
+*Package:* `com.salesmanager.core.modules.integration.payment.model`
+
+*Type:*  interface
+
+*Description:* Returns token-value related to the initialization of the transaction This method is invoked for paypal express checkout
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.modules.integration.payment.model` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.math.BigDecimal`
+* `java.util.List`
+
+*Application Imports:*
+
+* `com.salesmanager.core.model.customer.Customer`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.order.Order`
+* `com.salesmanager.core.model.payments.Payment`
+* `com.salesmanager.core.model.payments.Transaction`
+* `com.salesmanager.core.model.shoppingcart.ShoppingCartItem`
+* `com.salesmanager.core.model.system.IntegrationConfiguration`
+* `com.salesmanager.core.model.system.IntegrationModule`
+* `com.salesmanager.core.modules.integration.IntegrationException`
+
+== Methods
+
+This interface contains 6 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |void |validateModuleConfiguration()
+|public |Transaction |initTransaction()
+|public |Transaction |authorize()
+|public |Transaction |capture()
+|public |Transaction |authorizeAndCapture()
+|public |Transaction |refund()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/payment/model/PaymentModule.java`
+

@@ -1,0 +1,83 @@
+= Customer
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java`
+
+*Package:* `com.salesmanager.core.model.customer`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.customer` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.math.BigDecimal`
+* `java.util.ArrayList`
+* `java.util.Date`
+* `java.util.HashSet`
+* `java.util.List`
+* `java.util.Set`
+* `javax.persistence.CascadeType`
+* `javax.persistence.Column`
+* `javax.persistence.Embedded`
+* `javax.persistence.Entity`
+
+*Application Imports:*
+
+* `org.hibernate.annotations.Cascade`
+* `com.fasterxml.jackson.annotation.JsonIgnore`
+* `com.salesmanager.core.constants.SchemaConstant`
+* `com.salesmanager.core.model.catalog.product.review.ProductReview`
+* `com.salesmanager.core.model.common.Billing`
+* `com.salesmanager.core.model.common.CredentialsReset`
+* `com.salesmanager.core.model.common.Delivery`
+* `com.salesmanager.core.model.common.audit.AuditSection`
+* `com.salesmanager.core.model.common.audit.Auditable`
+* `com.salesmanager.core.model.customer.attribute.CustomerAttribute`
+
+== Methods
+
+This class contains 43 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Long |getId()
+|public |void |setId()
+|public |Date |getDateOfBirth()
+|public |void |setDateOfBirth()
+|public |String |getEmailAddress()
+|public |void |setEmailAddress()
+|public |String |getNick()
+|public |void |setNick()
+|public |String |getCompany()
+|public |void |setCompany()
+|public |String |getPassword()
+|public |void |setPassword()
+|public |boolean |isAnonymous()
+|public |void |setAnonymous()
+|public |void |setReviews()
+|public |void |setMerchantStore()
+|public |MerchantStore |getMerchantStore()
+|public |void |setDelivery()
+|public |Delivery |getDelivery()
+|public |void |setBilling()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java`
+

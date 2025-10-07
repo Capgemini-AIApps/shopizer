@@ -1,0 +1,67 @@
+= CustomerAttribute
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerAttribute.java`
+
+*Package:* `com.salesmanager.core.model.customer.attribute`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.customer.attribute` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `javax.persistence.Column`
+* `javax.persistence.Entity`
+* `javax.persistence.FetchType`
+* `javax.persistence.GeneratedValue`
+* `javax.persistence.GenerationType`
+* `javax.persistence.Id`
+* `javax.persistence.JoinColumn`
+* `javax.persistence.ManyToOne`
+* `javax.persistence.Table`
+* `javax.persistence.TableGenerator`
+
+*Application Imports:*
+
+* `com.fasterxml.jackson.annotation.JsonIgnore`
+* `com.salesmanager.core.constants.SchemaConstant`
+* `com.salesmanager.core.model.customer.Customer`
+* `com.salesmanager.core.model.generic.SalesManagerEntity`
+
+== Methods
+
+This class contains 10 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Long |getId()
+|public |void |setId()
+|public |CustomerOption |getCustomerOption()
+|public |void |setCustomerOption()
+|public |CustomerOptionValue |getCustomerOptionValue()
+|public |void |setCustomerOptionValue()
+|public |Customer |getCustomer()
+|public |void |setCustomer()
+|public |void |setTextValue()
+|public |String |getTextValue()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerAttribute.java`
+

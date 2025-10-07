@@ -1,0 +1,76 @@
+= ShopApplicationConfiguration
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/application/config/ShopApplicationConfiguration.java`
+
+*Package:* `com.salesmanager.shop.application.config`
+
+*Type:*  class
+
+*Description:* "); registrationBean.addUrlPatterns("/api/**"); registrationBean.addUrlPatterns("/customer/**");
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.application.config` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.Arrays`
+* `java.util.List`
+* `java.util.Locale`
+
+*Spring Framework Imports:*
+
+* `org.springframework.boot.context.event.ApplicationReadyEvent`
+* `org.springframework.boot.web.servlet.FilterRegistrationBean`
+* `org.springframework.boot.web.servlet.ServletComponentScan`
+* `org.springframework.context.annotation.Bean`
+* `org.springframework.context.annotation.ComponentScan`
+* `org.springframework.context.annotation.Configuration`
+* `org.springframework.context.annotation.Import`
+* `org.springframework.context.event.EventListener`
+* `org.springframework.context.support.ReloadableResourceBundleMessageSource`
+* `org.springframework.http.MediaType`
+
+*Application Imports:*
+
+* `org.apache.commons.logging.Log`
+* `org.apache.commons.logging.LogFactory`
+* `com.salesmanager.core.business.configuration.CoreApplicationConfiguration`
+* `com.salesmanager.shop.filter.CorsFilter`
+* `com.salesmanager.shop.filter.XssFilter`
+* `com.salesmanager.shop.utils.LabelUtils`
+
+== Methods
+
+This class contains 11 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |void |applicationReadyCode()
+|public |void |configureMessageConverters()
+|public |void |addViewControllers()
+|public |void |addInterceptors()
+|public |ByteArrayHttpMessageConverter |byteArrayHttpMessageConverter()
+|public |LocaleChangeInterceptor |localeChangeInterceptor()
+|public |StoreFilter |storeFilter()
+|public |CorsFilter |corsFilter()
+|public |SessionLocaleResolver |localeResolver()
+|public |ReloadableResourceBundleMessageSource |messageSource()
+|public |LabelUtils |messages()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/application/config/ShopApplicationConfiguration.java`
+

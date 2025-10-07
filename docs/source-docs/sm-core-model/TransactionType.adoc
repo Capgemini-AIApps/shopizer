@@ -1,0 +1,23 @@
+= TransactionType
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/payments/TransactionType.java`
+
+*Package:* `com.salesmanager.core.model.payments`
+
+*Type:*  enum
+
+*Description:* No description available
+
+== Overview
+
+This enum is part of the `com.salesmanager.core.model.payments` package.
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/payments/TransactionType.java`
+

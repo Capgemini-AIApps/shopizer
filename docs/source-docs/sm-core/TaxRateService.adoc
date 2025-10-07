@@ -1,0 +1,42 @@
+= TaxRateService
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxRateService.java`
+
+*Package:* `com.salesmanager.core.business.services.tax`
+
+*Type:*  interface
+
+*Description:* No description available
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.business.services.tax` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityService`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.reference.country.Country`
+* `com.salesmanager.core.model.reference.language.Language`
+* `com.salesmanager.core.model.reference.zone.Zone`
+* `com.salesmanager.core.model.tax.taxclass.TaxClass`
+* `com.salesmanager.core.model.tax.taxrate.TaxRate`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxRateService.java`
+

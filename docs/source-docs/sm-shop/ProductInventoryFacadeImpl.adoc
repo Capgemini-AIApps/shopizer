@@ -1,0 +1,80 @@
+= ProductInventoryFacadeImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductInventoryFacadeImpl.java`
+
+*Package:* `com.salesmanager.shop.store.facade.product`
+
+*Type:*  class
+
+*Description:* private boolean isStoreParentNotExist(MerchantStore store) { return Objects.isNull(store.getParent()); }
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.facade.product` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.List`
+* `java.util.Optional`
+* `java.util.Set`
+* `java.util.stream.Collectors`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.annotation.Autowired`
+* `org.springframework.context.annotation.Profile`
+* `org.springframework.data.domain.Page`
+* `org.springframework.data.domain.PageImpl`
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.apache.commons.lang3.Validate`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.catalog.product.ProductService`
+* `com.salesmanager.core.business.services.catalog.product.availability.ProductAvailabilityService`
+* `com.salesmanager.core.business.services.catalog.product.variant.ProductVariantService`
+* `com.salesmanager.core.model.catalog.product.Product`
+* `com.salesmanager.core.model.catalog.product.availability.ProductAvailability`
+* `com.salesmanager.core.model.catalog.product.variant.ProductVariant`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.reference.language.Language`
+
+== Methods
+
+This class contains 14 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|private |void |validateProductHasSameStore()
+|public |void |delete()
+|public |ReadableInventory |get()
+|public |ReadableInventory |get()
+|private |boolean |isStoreParentNotExist()
+|private |MerchantStore |getMerchantStore()
+|private |ReadableInventory |readableInventory()
+|private |Product |getProductById()
+|private |ProductVariant |getProductByInstance()
+|public |ReadableInventory |add()
+|private |void |saveOrUpdate()
+|private |ProductAvailability |getProductAvailabilityToSave()
+|public |ReadableInventory |get()
+|public |void |update()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductInventoryFacadeImpl.java`
+

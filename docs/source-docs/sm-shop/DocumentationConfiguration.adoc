@@ -1,0 +1,68 @@
+= DocumentationConfiguration
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/application/config/DocumentationConfiguration.java`
+
+*Package:* `com.salesmanager.shop.application.config`
+
+*Type:*  class
+
+*Description:* http://localhost:8080/swagger-ui.html#/ http://localhost:8080/v2/api-docs
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.application.config` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.Collections`
+* `java.util.HashSet`
+* `java.util.List`
+* `java.util.Set`
+* `java.util.stream.Collectors`
+* `java.util.stream.Stream`
+
+*Spring Framework Imports:*
+
+* `org.springframework.context.annotation.Bean`
+* `org.springframework.context.annotation.Configuration`
+* `org.springframework.web.bind.annotation.RequestMethod`
+
+*Application Imports:*
+
+* `com.google.common.base.Predicate`
+* `com.google.common.base.Predicates`
+* `springfox.documentation.RequestHandler`
+* `springfox.documentation.builders.RequestHandlerSelectors`
+* `springfox.documentation.builders.ResponseMessageBuilder`
+* `springfox.documentation.schema.ModelRef`
+* `springfox.documentation.service.ApiInfo`
+* `springfox.documentation.service.ApiKey`
+* `springfox.documentation.service.AuthorizationScope`
+* `springfox.documentation.service.Contact`
+
+== Methods
+
+This class contains 2 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Docket |api()
+|private |ApiInfo |apiInfo()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/application/config/DocumentationConfiguration.java`
+

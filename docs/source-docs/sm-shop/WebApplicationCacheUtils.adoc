@@ -1,0 +1,51 @@
+= WebApplicationCacheUtils
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/utils/WebApplicationCacheUtils.java`
+
+*Package:* `com.salesmanager.shop.utils`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.utils` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.stereotype.Component`
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.utils.CacheUtils`
+
+== Methods
+
+This class contains 2 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Object |getFromCache()
+|public |void |putInCache()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/utils/WebApplicationCacheUtils.java`
+

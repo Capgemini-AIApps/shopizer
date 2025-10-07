@@ -1,0 +1,60 @@
+= JWTCustomerServicesImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/security/customer/JWTCustomerServicesImpl.java`
+
+*Package:* `com.salesmanager.shop.store.security.customer`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.security.customer` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.Collection`
+* `java.util.Date`
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.security.core.GrantedAuthority`
+* `org.springframework.security.core.userdetails.UserDetails`
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.services.customer.CustomerService`
+* `com.salesmanager.core.business.services.user.GroupService`
+* `com.salesmanager.core.business.services.user.PermissionService`
+* `com.salesmanager.core.model.common.audit.AuditSection`
+* `com.salesmanager.core.model.customer.Customer`
+* `com.salesmanager.shop.store.security.AbstractCustomerServices`
+* `com.salesmanager.shop.store.security.user.JWTUser`
+
+== Methods
+
+This class contains 1 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|protected |UserDetails |userDetails()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/security/customer/JWTCustomerServicesImpl.java`
+

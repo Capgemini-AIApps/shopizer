@@ -1,0 +1,35 @@
+= Encryption
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-modules/src/main/java/com/salesmanager/core/modules/utils/Encryption.java`
+
+*Package:* `com.salesmanager.core.modules.utils`
+
+*Type:*  interface
+
+*Description:* Can be used to encrypt block or information that has to be maintained secret
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.modules.utils` package.
+
+== Methods
+
+This interface contains 2 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |String |encrypt()
+|public |String |decrypt()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-modules/src/main/java/com/salesmanager/core/modules/utils/Encryption.java`
+

@@ -1,0 +1,73 @@
+= ProductFacadeV2Impl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductFacadeV2Impl.java`
+
+*Package:* `com.salesmanager.shop.store.facade.product`
+
+*Type:*  class
+
+*Description:* Filters on otion, optionValues and other criterias
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.facade.product` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.Comparator`
+* `java.util.List`
+* `java.util.stream.Collectors`
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.annotation.Autowired`
+* `org.springframework.beans.factory.annotation.Qualifier`
+* `org.springframework.context.annotation.Profile`
+* `org.springframework.data.domain.Page`
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.apache.commons.collections4.CollectionUtils`
+* `org.apache.commons.lang3.Validate`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.catalog.category.CategoryService`
+* `com.salesmanager.core.business.services.catalog.pricing.PricingService`
+* `com.salesmanager.core.business.services.catalog.product.ProductService`
+* `com.salesmanager.core.business.services.catalog.product.attribute.ProductAttributeService`
+* `com.salesmanager.core.business.services.catalog.product.availability.ProductAvailabilityService`
+* `com.salesmanager.core.business.services.catalog.product.relationship.ProductRelationshipService`
+* `com.salesmanager.core.business.services.catalog.product.variant.ProductVariantService`
+
+== Methods
+
+This class contains 7 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Product |getProduct()
+|public |ReadableProduct |getProductByCode()
+|private |ReadableProductVariant |productVariant()
+|public |ReadableProduct |getProduct()
+|public |ReadableProduct |getProductBySeUrl()
+|public |ReadableProductList |getProductListsByCriterias()
+|public |ReadableProductPrice |getProductPrice()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductFacadeV2Impl.java`
+

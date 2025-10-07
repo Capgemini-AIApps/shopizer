@@ -1,0 +1,82 @@
+= ShippingServiceImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java`
+
+*Package:* `com.salesmanager.core.business.services.shipping`
+
+*Type:*  class
+
+*Description:* get shipping origin *
+
+== Overview
+
+This class is part of the `com.salesmanager.core.business.services.shipping` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.math.BigDecimal`
+* `java.util.ArrayList`
+* `java.util.Collections`
+* `java.util.Date`
+* `java.util.HashMap`
+* `java.util.List`
+* `java.util.Locale`
+* `java.util.Map`
+* `java.util.Optional`
+* `javax.annotation.Resource`
+
+*Spring Framework Imports:*
+
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.apache.commons.collections4.CollectionUtils`
+* `org.apache.commons.lang3.StringUtils`
+* `org.apache.commons.lang3.Validate`
+* `org.json.simple.JSONArray`
+* `org.json.simple.JSONValue`
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.fasterxml.jackson.databind.ObjectMapper`
+* `com.salesmanager.core.business.constants.ShippingConstants`
+* `com.salesmanager.core.business.exception.ServiceException`
+
+== Methods
+
+This class contains 15 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |ShippingConfiguration |getShippingConfiguration()
+|public |IntegrationConfiguration |getShippingConfiguration()
+|public |CustomIntegrationConfiguration |getCustomShippingConfiguration()
+|public |void |saveShippingConfiguration()
+|public |void |saveCustomShippingConfiguration()
+|public |void |saveShippingQuoteModuleConfiguration()
+|public |void |removeShippingQuoteModuleConfiguration()
+|public |void |removeCustomShippingQuoteModuleConfiguration()
+|public |ShippingSummary |getShippingSummary()
+|public |ShippingQuote |getShippingQuote()
+|public |void |setSupportedCountries()
+|private |BigDecimal |calculateOrderTotal()
+|public |boolean |requiresShipping()
+|public |ShippingMetaData |getShippingMetaData()
+|public |boolean |hasTaxOnShipping()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java`
+

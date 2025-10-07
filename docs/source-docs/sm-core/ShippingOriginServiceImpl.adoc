@@ -1,0 +1,55 @@
+= ShippingOriginServiceImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingOriginServiceImpl.java`
+
+*Package:* `com.salesmanager.core.business.services.shipping`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.business.services.shipping` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.repositories.shipping.ShippingOriginRepository`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityServiceImpl`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.shipping.ShippingOrigin`
+
+== Methods
+
+This class contains 1 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |ShippingOrigin |getByStore()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingOriginServiceImpl.java`
+

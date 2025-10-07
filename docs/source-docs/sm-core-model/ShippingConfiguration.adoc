@@ -1,0 +1,69 @@
+= ShippingConfiguration
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingConfiguration.java`
+
+*Package:* `com.salesmanager.core.model.shipping`
+
+*Type:*  class
+
+*Description:* Object saved in the database maintaining various shipping options
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.shipping` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.math.BigDecimal`
+* `java.util.ArrayList`
+* `java.util.List`
+
+*Application Imports:*
+
+* `org.json.simple.JSONArray`
+* `org.json.simple.JSONAware`
+* `org.json.simple.JSONObject`
+
+== Methods
+
+This class contains 49 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |String |getShipType()
+|public |String |getShipBaseType()
+|public |String |getShipOptionPriceType()
+|public |void |setShippingOptionPriceType()
+|public |ShippingOptionPriceType |getShippingOptionPriceType()
+|public |void |setShippingBasisType()
+|public |ShippingBasisType |getShippingBasisType()
+|public |void |setShippingType()
+|public |ShippingType |getShippingType()
+|public |ShippingPackageType |getShippingPackageType()
+|public |void |setShippingPackageType()
+|public |String |getShipPackageType()
+|public |void |setShipType()
+|public |void |setShipOptionPriceType()
+|public |void |setShipBaseType()
+|public |void |setShipPackageType()
+|public |void |setShipDescription()
+|public |void |setShipFreeType()
+|public |String |toJSONString()
+|private |JSONObject |transformPackage()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingConfiguration.java`
+

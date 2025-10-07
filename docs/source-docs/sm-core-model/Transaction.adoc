@@ -1,0 +1,82 @@
+= Transaction
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java`
+
+*Package:* `com.salesmanager.core.model.payments`
+
+*Type:*  class
+
+*Description:* 
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.payments` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.io.Serializable`
+* `java.math.BigDecimal`
+* `java.util.Date`
+* `java.util.HashMap`
+* `java.util.Map`
+* `javax.persistence.Column`
+* `javax.persistence.Embedded`
+* `javax.persistence.Entity`
+* `javax.persistence.EntityListeners`
+* `javax.persistence.EnumType`
+
+*Application Imports:*
+
+* `org.hibernate.annotations.Type`
+* `org.json.simple.JSONAware`
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.fasterxml.jackson.databind.ObjectMapper`
+* `com.salesmanager.core.constants.SchemaConstant`
+* `com.salesmanager.core.model.common.audit.AuditListener`
+* `com.salesmanager.core.model.common.audit.AuditSection`
+* `com.salesmanager.core.model.common.audit.Auditable`
+* `com.salesmanager.core.model.generic.SalesManagerEntity`
+
+== Methods
+
+This class contains 19 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |AuditSection |getAuditSection()
+|public |void |setAuditSection()
+|public |Long |getId()
+|public |void |setId()
+|public |Order |getOrder()
+|public |void |setOrder()
+|public |BigDecimal |getAmount()
+|public |void |setAmount()
+|public |Date |getTransactionDate()
+|public |void |setTransactionDate()
+|public |TransactionType |getTransactionType()
+|public |String |getTransactionTypeName()
+|public |void |setTransactionType()
+|public |PaymentType |getPaymentType()
+|public |void |setPaymentType()
+|public |String |getDetails()
+|public |void |setDetails()
+|public |void |setTransactionDetails()
+|public |String |toJSONString()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java`
+

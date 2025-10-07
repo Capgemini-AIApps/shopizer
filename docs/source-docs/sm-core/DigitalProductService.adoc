@@ -1,0 +1,36 @@
+= DigitalProductService
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/file/DigitalProductService.java`
+
+*Package:* `com.salesmanager.core.business.services.catalog.product.file`
+
+*Type:*  interface
+
+*Description:* No description available
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.business.services.catalog.product.file` package.
+
+== Dependencies
+
+=== Imports
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityService`
+* `com.salesmanager.core.model.catalog.product.Product`
+* `com.salesmanager.core.model.catalog.product.file.DigitalProduct`
+* `com.salesmanager.core.model.content.InputContentFile`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/file/DigitalProductService.java`
+

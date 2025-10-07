@@ -1,0 +1,41 @@
+= TaxService
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxService.java`
+
+*Package:* `com.salesmanager.core.business.services.tax`
+
+*Type:*  interface
+
+*Description:* Retrieves tax configurations (TaxConfiguration) for a given MerchantStore
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.business.services.tax` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.model.customer.Customer`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.order.OrderSummary`
+* `com.salesmanager.core.model.reference.language.Language`
+* `com.salesmanager.core.model.tax.TaxConfiguration`
+* `com.salesmanager.core.model.tax.TaxItem`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxService.java`
+

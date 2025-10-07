@@ -1,0 +1,34 @@
+= CustomerOptinService
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/customer/optin/CustomerOptinService.java`
+
+*Package:* `com.salesmanager.core.business.services.customer.optin`
+
+*Type:*  interface
+
+*Description:* Used for optin in customers An implementation example is for signin in users
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.business.services.customer.optin` package.
+
+== Dependencies
+
+=== Imports
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityService`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.system.optin.CustomerOptin`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/customer/optin/CustomerOptinService.java`
+

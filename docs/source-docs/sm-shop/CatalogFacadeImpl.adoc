@@ -1,0 +1,73 @@
+= CatalogFacadeImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/facade/catalog/CatalogFacadeImpl.java`
+
+*Package:* `com.salesmanager.shop.store.facade.catalog`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.facade.catalog` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+* `java.util.Objects`
+* `java.util.Optional`
+* `java.util.stream.Collectors`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.annotation.Autowired`
+* `org.springframework.data.domain.Page`
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.catalog.catalog.CatalogEntryService`
+* `com.salesmanager.core.business.services.catalog.catalog.CatalogService`
+* `com.salesmanager.core.model.catalog.catalog.Catalog`
+* `com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.reference.language.Language`
+* `com.salesmanager.shop.mapper.Mapper`
+* `com.salesmanager.shop.mapper.catalog.PersistableCatalogMapper`
+* `com.salesmanager.shop.mapper.catalog.ReadableCatalogCategoryEntryMapper`
+
+== Methods
+
+This class contains 10 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |ReadableCatalog |saveCatalog()
+|public |void |deleteCatalog()
+|public |ReadableCatalog |getCatalog()
+|public |void |updateCatalog()
+|public |ReadableCatalog |getCatalog()
+|public |Catalog |getCatalog()
+|public |ReadableCatalogCategoryEntry |getCatalogEntry()
+|public |ReadableCatalogCategoryEntry |addCatalogEntry()
+|public |void |removeCatalogEntry()
+|public |boolean |uniqueCatalog()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/facade/catalog/CatalogFacadeImpl.java`
+

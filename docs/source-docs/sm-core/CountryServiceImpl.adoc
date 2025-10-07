@@ -1,0 +1,65 @@
+= CountryServiceImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java`
+
+*Package:* `com.salesmanager.core.business.services.reference.country`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.business.services.reference.country` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.LinkedHashMap`
+* `java.util.List`
+* `java.util.Map`
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.cache.annotation.Cacheable`
+* `org.springframework.stereotype.Service`
+* `org.springframework.util.CollectionUtils`
+
+*Application Imports:*
+
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.repositories.reference.country.CountryRepository`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityServiceImpl`
+* `com.salesmanager.core.business.utils.CacheUtils`
+* `com.salesmanager.core.model.reference.country.Country`
+* `com.salesmanager.core.model.reference.country.CountryDescription`
+* `com.salesmanager.core.model.reference.language.Language`
+
+== Methods
+
+This class contains 2 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Country |getByCode()
+|public |void |addCountryDescription()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java`
+

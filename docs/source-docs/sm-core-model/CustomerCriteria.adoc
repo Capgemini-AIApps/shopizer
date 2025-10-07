@@ -1,0 +1,51 @@
+= CustomerCriteria
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/customer/CustomerCriteria.java`
+
+*Package:* `com.salesmanager.core.model.customer`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.customer` package.
+
+== Dependencies
+
+=== Imports
+
+*Application Imports:*
+
+* `com.salesmanager.core.model.common.Criteria`
+
+== Methods
+
+This class contains 10 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |String |getFirstName()
+|public |void |setFirstName()
+|public |String |getLastName()
+|public |void |setLastName()
+|public |String |getName()
+|public |void |setName()
+|public |String |getEmail()
+|public |void |setEmail()
+|public |String |getCountry()
+|public |void |setCountry()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/customer/CustomerCriteria.java`
+

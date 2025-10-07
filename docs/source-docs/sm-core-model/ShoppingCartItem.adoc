@@ -1,0 +1,80 @@
+= ShoppingCartItem
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java`
+
+*Package:* `com.salesmanager.core.model.shoppingcart`
+
+*Type:*  class
+
+*Description:* remove usage to limit possibility to implement bugs, would use constructors above to make sure all needed attributes are set correctly *
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.shoppingcart` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.io.Serializable`
+* `java.math.BigDecimal`
+* `java.util.Collections`
+* `java.util.HashSet`
+* `java.util.Set`
+* `javax.persistence.CascadeType`
+* `javax.persistence.Column`
+* `javax.persistence.Embedded`
+* `javax.persistence.Entity`
+* `javax.persistence.EntityListeners`
+
+*Application Imports:*
+
+* `com.fasterxml.jackson.annotation.JsonIgnore`
+* `com.salesmanager.core.model.catalog.product.Product`
+* `com.salesmanager.core.model.catalog.product.price.FinalPrice`
+* `com.salesmanager.core.model.common.audit.AuditListener`
+* `com.salesmanager.core.model.common.audit.AuditSection`
+* `com.salesmanager.core.model.common.audit.Auditable`
+* `com.salesmanager.core.model.generic.SalesManagerEntity`
+
+== Methods
+
+This class contains 30 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |AuditSection |getAuditSection()
+|public |void |setAuditSection()
+|public |Long |getId()
+|public |void |setId()
+|public |void |setAttributes()
+|public |void |setItemPrice()
+|public |BigDecimal |getItemPrice()
+|public |void |setQuantity()
+|public |Integer |getQuantity()
+|public |ShoppingCart |getShoppingCart()
+|public |void |setShoppingCart()
+|public |void |setProductId()
+|public |Long |getProductId()
+|public |void |setProduct()
+|public |Product |getProduct()
+|public |void |addAttributes()
+|public |void |removeAttributes()
+|public |void |removeAllAttributes()
+|public |void |setSubTotal()
+|public |BigDecimal |getSubTotal()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java`
+

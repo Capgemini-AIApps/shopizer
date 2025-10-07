@@ -1,0 +1,68 @@
+= ProductVariationFacadeImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariationFacadeImpl.java`
+
+*Package:* `com.salesmanager.shop.store.facade.product`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.facade.product` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+* `java.util.Optional`
+* `java.util.stream.Collectors`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.annotation.Autowired`
+* `org.springframework.data.domain.Page`
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.apache.commons.lang3.Validate`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.catalog.product.variation.ProductVariationService`
+* `com.salesmanager.core.model.catalog.product.variation.ProductVariation`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.reference.language.Language`
+* `com.salesmanager.shop.mapper.catalog.PersistableProductVariationMapper`
+* `com.salesmanager.shop.mapper.catalog.ReadableProductVariationMapper`
+* `com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation`
+* `com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation`
+
+== Methods
+
+This class contains 6 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |ReadableProductVariation |get()
+|private |ReadableProductVariation |convert()
+|public |Long |create()
+|public |void |update()
+|public |void |delete()
+|public |boolean |exists()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariationFacadeImpl.java`
+

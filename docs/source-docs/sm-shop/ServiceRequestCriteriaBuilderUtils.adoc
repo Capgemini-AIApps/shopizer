@@ -1,0 +1,60 @@
+= ServiceRequestCriteriaBuilderUtils
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/utils/ServiceRequestCriteriaBuilderUtils.java`
+
+*Package:* `com.salesmanager.shop.utils`
+
+*Type:*  class
+
+*Description:* Binds request parameter values to specific request criterias
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.utils` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.Map`
+* `javax.servlet.http.HttpServletRequest`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.PropertyAccessor`
+* `org.springframework.beans.PropertyAccessorFactory`
+
+*Application Imports:*
+
+* `org.apache.commons.lang3.StringUtils`
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.model.common.Criteria`
+* `com.salesmanager.core.model.common.CriteriaOrderBy`
+* `com.salesmanager.core.model.merchant.MerchantStoreCriteria`
+* `com.salesmanager.shop.store.api.exception.RestApiException`
+
+== Methods
+
+This class contains 3 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Criteria |buildRequestCriterias()
+|private |void |setValue()
+|public |Criteria |buildRequest()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/utils/ServiceRequestCriteriaBuilderUtils.java`
+

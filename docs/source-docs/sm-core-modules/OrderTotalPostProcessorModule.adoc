@@ -1,0 +1,37 @@
+= OrderTotalPostProcessorModule
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-modules/src/main/java/com/salesmanager/core/modules/order/total/OrderTotalPostProcessorModule.java`
+
+*Package:* `com.salesmanager.core.modules.order.total`
+
+*Type:*  interface
+
+*Description:* Calculates order total based on specific modules implementation
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.modules.order.total` package.
+
+== Dependencies
+
+=== Imports
+
+*Application Imports:*
+
+* `com.salesmanager.core.model.catalog.product.Product`
+* `com.salesmanager.core.model.customer.Customer`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.order.OrderSummary`
+* `com.salesmanager.core.model.order.OrderTotal`
+* `com.salesmanager.core.model.shoppingcart.ShoppingCartItem`
+* `com.salesmanager.core.modules.Module`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-modules/src/main/java/com/salesmanager/core/modules/order/total/OrderTotalPostProcessorModule.java`
+
