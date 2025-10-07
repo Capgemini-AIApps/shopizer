@@ -1,0 +1,329 @@
+= Shopizer - Source Code Documentation
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+:icons: font
+:doctype: book
+
+== Introduction
+
+This documentation provides comprehensive retro-documentation of the Shopizer e-commerce platform source code. The documentation is organized by module and covers key components of the system.
+
+Shopizer is a headless commerce REST API for e-commerce applications built with Java and Spring Boot. It provides comprehensive functionality for:
+
+* Product catalog management
+* Shopping cart operations
+* Checkout and payment processing
+* Customer management
+* Order management
+* Merchant administration
+* Multi-language and multi-currency support
+
+== Repository Structure
+
+The Shopizer repository is organized into the following main modules:
+
+[cols="1,3", options="header"]
+|===
+|Module |Description
+
+|`sm-shop`
+|Main web application module containing REST API controllers, facades, security configurations, and application entry point
+
+|`sm-core`
+|Core business logic module containing services, repositories, and business process implementations
+
+|`sm-core-model`
+|Domain model module containing entity classes representing the business domain
+
+|`sm-core-modules`
+|Integration modules for external services like shipping, payment, and utilities
+|===
+
+== Module Documentation
+
+=== sm-shop Module (49 files)
+
+The sm-shop module is the main web application that exposes REST APIs and handles HTTP requests.
+
+==== Application & Configuration
+
+* link:source-docs/sm-shop/ShopApplication.adoc[ShopApplication] - Main Spring Boot application entry point
+* link:source-docs/sm-shop/ShopApplicationConfiguration.adoc[ShopApplicationConfiguration] - Application configuration
+* link:source-docs/sm-shop/AppConfiguration.adoc[AppConfiguration] - Additional configuration
+* link:source-docs/sm-shop/DocumentationConfiguration.adoc[DocumentationConfiguration] - Swagger API documentation configuration
+
+==== API Controllers
+
+* link:source-docs/sm-shop/DefaultController.adoc[DefaultController] - Default controller
+* link:source-docs/sm-shop/StoreContactRESTController.adoc[StoreContactRESTController] - Store contact API
+* link:source-docs/sm-shop/SystemRESTController.adoc[SystemRESTController] - System API
+* link:source-docs/sm-shop/ShippingConfigurationApi.adoc[ShippingConfigurationApi] - Shipping configuration API
+* link:source-docs/sm-shop/ConfigurationsApi.adoc[ConfigurationsApi] - General configurations API
+
+==== Base Controllers
+
+* link:source-docs/sm-shop/AbstractController.adoc[AbstractController] - Base controller with common functionality
+
+==== Facade Implementations
+
+Facades provide a simplified interface to complex business logic:
+
+* link:source-docs/sm-shop/CustomerFacadeImpl.adoc[CustomerFacadeImpl] - Customer operations
+* link:source-docs/sm-shop/ProductFacadeImpl.adoc[ProductFacadeImpl] - Product management
+* link:source-docs/sm-shop/ProductFacadeV2Impl.adoc[ProductFacadeV2Impl] - Product management (v2)
+* link:source-docs/sm-shop/CategoryFacadeImpl.adoc[CategoryFacadeImpl] - Category management
+* link:source-docs/sm-shop/OrderFacadeImpl.adoc[OrderFacadeImpl] - Order processing
+* link:source-docs/sm-shop/ShoppingCartFacadeImpl.adoc[ShoppingCartFacadeImpl] - Shopping cart operations
+* link:source-docs/sm-shop/CatalogFacadeImpl.adoc[CatalogFacadeImpl] - Catalog operations
+* link:source-docs/sm-shop/ContentFacadeImpl.adoc[ContentFacadeImpl] - Content management
+* link:source-docs/sm-shop/ManufacturerFacadeImpl.adoc[ManufacturerFacadeImpl] - Manufacturer management
+* link:source-docs/sm-shop/UserFacadeImpl.adoc[UserFacadeImpl] - User management
+* link:source-docs/sm-shop/TaxFacadeImpl.adoc[TaxFacadeImpl] - Tax calculations
+
+==== Product-Related Facades
+
+* link:source-docs/sm-shop/ProductOptionFacadeImpl.adoc[ProductOptionFacadeImpl] - Product options
+* link:source-docs/sm-shop/ProductVariantFacadeImpl.adoc[ProductVariantFacadeImpl] - Product variants
+* link:source-docs/sm-shop/ProductVariantGroupFacadeImpl.adoc[ProductVariantGroupFacadeImpl] - Product variant groups
+* link:source-docs/sm-shop/ProductPriceFacadeImpl.adoc[ProductPriceFacadeImpl] - Product pricing
+* link:source-docs/sm-shop/ProductVariationFacadeImpl.adoc[ProductVariationFacadeImpl] - Product variations
+* link:source-docs/sm-shop/ProductTypeFacadeImpl.adoc[ProductTypeFacadeImpl] - Product types
+* link:source-docs/sm-shop/ProductCommonFacadeImpl.adoc[ProductCommonFacadeImpl] - Common product operations
+* link:source-docs/sm-shop/ProductDefinitionFacadeImpl.adoc[ProductDefinitionFacadeImpl] - Product definitions
+* link:source-docs/sm-shop/ProductInventoryFacadeImpl.adoc[ProductInventoryFacadeImpl] - Product inventory
+* link:source-docs/sm-shop/ProductOptionSetFacadeImpl.adoc[ProductOptionSetFacadeImpl] - Product option sets
+* link:source-docs/sm-shop/ProductItemsFacadeImpl.adoc[ProductItemsFacadeImpl] - Product items
+
+==== Configuration Facades
+
+* link:source-docs/sm-shop/AbstractConfigurationFacadeImpl.adoc[AbstractConfigurationFacadeImpl] - Base configuration
+* link:source-docs/sm-shop/ShippingConfigurationFacadeImpl.adoc[ShippingConfigurationFacadeImpl] - Shipping configuration
+* link:source-docs/sm-shop/PaymentConfigurationFacadeImpl.adoc[PaymentConfigurationFacadeImpl] - Payment configuration
+
+==== Security & Authentication
+
+* link:source-docs/sm-shop/JWTAdminServicesImpl.adoc[JWTAdminServicesImpl] - JWT authentication for admin
+* link:source-docs/sm-shop/JWTCustomerServicesImpl.adoc[JWTCustomerServicesImpl] - JWT authentication for customers
+* link:source-docs/sm-shop/CredentialsService.adoc[CredentialsService] - Credentials service interface
+* link:source-docs/sm-shop/CredentialsServiceImpl.adoc[CredentialsServiceImpl] - Credentials service implementation
+* link:source-docs/sm-shop/CustomerServicesImpl.adoc[CustomerServicesImpl] - Customer authentication services
+* link:source-docs/sm-shop/SocialCustomerServicesImpl.adoc[SocialCustomerServicesImpl] - Social login services
+* link:source-docs/sm-shop/ServicesAuthenticationEntryPoint.adoc[ServicesAuthenticationEntryPoint] - Authentication entry point
+* link:source-docs/sm-shop/ServicesAuthenticationSuccessHandler.adoc[ServicesAuthenticationSuccessHandler] - Authentication success handler
+* link:source-docs/sm-shop/AbstractCustomerServices.adoc[AbstractCustomerServices] - Base customer services
+
+==== User Management
+
+* link:source-docs/sm-shop/UserServicesImpl.adoc[UserServicesImpl] - User services implementation
+* link:source-docs/sm-shop/WebUserServices.adoc[WebUserServices] - Web user services
+
+==== Utilities
+
+* link:source-docs/sm-shop/ServiceRequestCriteriaBuilderUtils.adoc[ServiceRequestCriteriaBuilderUtils] - Request criteria builder
+* link:source-docs/sm-shop/WebApplicationCacheUtils.adoc[WebApplicationCacheUtils] - Cache utilities
+* link:source-docs/sm-shop/ServiceRuntimeException.adoc[ServiceRuntimeException] - Service exceptions
+
+=== sm-core Module (50 files)
+
+The sm-core module contains the core business logic and service implementations.
+
+==== Services & Business Logic
+
+* link:source-docs/sm-core/CatalogServiceHelper.adoc[CatalogServiceHelper] - Catalog service helper
+* link:source-docs/sm-core/RepositoryHelper.adoc[RepositoryHelper] - Repository helper utilities
+* link:source-docs/sm-core/SalesManagerEntityServiceImpl.adoc[SalesManagerEntityServiceImpl] - Base entity service
+* link:source-docs/sm-core/CustomerServiceImpl.adoc[CustomerServiceImpl] - Customer service
+* link:source-docs/sm-core/ProductServiceImpl.adoc[ProductServiceImpl] - Product service
+* link:source-docs/sm-core/CategoryServiceImpl.adoc[CategoryServiceImpl] - Category service
+* link:source-docs/sm-core/OrderServiceImpl.adoc[OrderServiceImpl] - Order service
+* link:source-docs/sm-core/ShoppingCartServiceImpl.adoc[ShoppingCartServiceImpl] - Shopping cart service
+* link:source-docs/sm-core/MerchantStoreServiceImpl.adoc[MerchantStoreServiceImpl] - Merchant store service
+* link:source-docs/sm-core/UserServiceImpl.adoc[UserServiceImpl] - User service
+
+==== Order Processing
+
+* link:source-docs/sm-core/OrderService.adoc[OrderService] - Order service interface
+* link:source-docs/sm-core/OrderProcessor.adoc[OrderProcessor] - Order processor
+* link:source-docs/sm-core/ODSInvoiceModule.adoc[ODSInvoiceModule] - Invoice generation module
+
+==== Payment & Shipping
+
+* link:source-docs/sm-core/ShippingQuoteServiceImpl.adoc[ShippingQuoteServiceImpl] - Shipping quote service
+* link:source-docs/sm-core/PaymentServiceImpl.adoc[PaymentServiceImpl] - Payment service
+
+==== Repositories
+
+* link:source-docs/sm-core/CustomerRepository.adoc[CustomerRepository] - Customer repository
+* link:source-docs/sm-core/ProductRepository.adoc[ProductRepository] - Product repository
+* link:source-docs/sm-core/CategoryRepository.adoc[CategoryRepository] - Category repository
+* link:source-docs/sm-core/OrderRepository.adoc[OrderRepository] - Order repository
+* link:source-docs/sm-core/MerchantStoreRepository.adoc[MerchantStoreRepository] - Merchant store repository
+
+For a complete list of all 50 documented files in sm-core, see the link:source-docs/sm-core/[sm-core directory].
+
+=== sm-core-model Module (50 files)
+
+The sm-core-model module contains domain entities and model classes.
+
+==== Product Domain
+
+* link:source-docs/sm-core-model/Product.adoc[Product] - Product entity
+* link:source-docs/sm-core-model/ProductDescription.adoc[ProductDescription] - Product description
+* link:source-docs/sm-core-model/ProductAvailability.adoc[ProductAvailability] - Product availability
+* link:source-docs/sm-core-model/ProductPrice.adoc[ProductPrice] - Product price
+* link:source-docs/sm-core-model/ProductImage.adoc[ProductImage] - Product image
+* link:source-docs/sm-core-model/ProductAttribute.adoc[ProductAttribute] - Product attribute
+* link:source-docs/sm-core-model/ProductOption.adoc[ProductOption] - Product option
+* link:source-docs/sm-core-model/ProductOptionValue.adoc[ProductOptionValue] - Product option value
+* link:source-docs/sm-core-model/ProductType.adoc[ProductType] - Product type
+* link:source-docs/sm-core-model/ProductReview.adoc[ProductReview] - Product review
+
+==== Category Domain
+
+* link:source-docs/sm-core-model/Category.adoc[Category] - Category entity
+* link:source-docs/sm-core-model/CategoryDescription.adoc[CategoryDescription] - Category description
+* link:source-docs/sm-core-model/Manufacturer.adoc[Manufacturer] - Manufacturer entity
+* link:source-docs/sm-core-model/ManufacturerDescription.adoc[ManufacturerDescription] - Manufacturer description
+
+==== Order Domain
+
+* link:source-docs/sm-core-model/Order.adoc[Order] - Order entity
+* link:source-docs/sm-core-model/OrderProduct.adoc[OrderProduct] - Order product
+* link:source-docs/sm-core-model/OrderTotal.adoc[OrderTotal] - Order total
+* link:source-docs/sm-core-model/OrderAccount.adoc[OrderAccount] - Order account
+* link:source-docs/sm-core-model/OrderStatus.adoc[OrderStatus] - Order status enum
+* link:source-docs/sm-core-model/OrderStatusHistory.adoc[OrderStatusHistory] - Order status history
+
+==== Customer Domain
+
+* link:source-docs/sm-core-model/Customer.adoc[Customer] - Customer entity
+* link:source-docs/sm-core-model/CustomerCriteria.adoc[CustomerCriteria] - Customer search criteria
+* link:source-docs/sm-core-model/CustomerGender.adoc[CustomerGender] - Customer gender enum
+* link:source-docs/sm-core-model/CustomerReview.adoc[CustomerReview] - Customer review
+* link:source-docs/sm-core-model/CustomerReviewDescription.adoc[CustomerReviewDescription] - Customer review description
+
+==== Shopping Cart
+
+* link:source-docs/sm-core-model/ShoppingCart.adoc[ShoppingCart] - Shopping cart entity
+* link:source-docs/sm-core-model/ShoppingCartItem.adoc[ShoppingCartItem] - Shopping cart item
+
+==== Tax Domain
+
+* link:source-docs/sm-core-model/TaxClass.adoc[TaxClass] - Tax class entity
+* link:source-docs/sm-core-model/TaxRate.adoc[TaxRate] - Tax rate
+* link:source-docs/sm-core-model/TaxRateDescription.adoc[TaxRateDescription] - Tax rate description
+* link:source-docs/sm-core-model/TaxConfiguration.adoc[TaxConfiguration] - Tax configuration
+* link:source-docs/sm-core-model/TaxItem.adoc[TaxItem] - Tax item
+* link:source-docs/sm-core-model/TaxBasisCalculation.adoc[TaxBasisCalculation] - Tax basis calculation enum
+
+==== Payment Domain
+
+* link:source-docs/sm-core-model/Payment.adoc[Payment] - Payment entity
+* link:source-docs/sm-core-model/PaymentMethod.adoc[PaymentMethod] - Payment method
+* link:source-docs/sm-core-model/PaymentType.adoc[PaymentType] - Payment type enum
+* link:source-docs/sm-core-model/Transaction.adoc[Transaction] - Transaction entity
+* link:source-docs/sm-core-model/TransactionType.adoc[TransactionType] - Transaction type enum
+* link:source-docs/sm-core-model/CreditCardPayment.adoc[CreditCardPayment] - Credit card payment
+* link:source-docs/sm-core-model/CreditCardType.adoc[CreditCardType] - Credit card type enum
+* link:source-docs/sm-core-model/PaypalPayment.adoc[PaypalPayment] - PayPal payment
+* link:source-docs/sm-core-model/BasicPayment.adoc[BasicPayment] - Basic payment
+
+==== Reference Data
+
+* link:source-docs/sm-core-model/Language.adoc[Language] - Language entity
+* link:source-docs/sm-core-model/Currency.adoc[Currency] - Currency entity
+* link:source-docs/sm-core-model/Country.adoc[Country] - Country entity
+* link:source-docs/sm-core-model/CountryDescription.adoc[CountryDescription] - Country description
+* link:source-docs/sm-core-model/Zone.adoc[Zone] - Zone entity
+* link:source-docs/sm-core-model/ZoneDescription.adoc[ZoneDescription] - Zone description
+* link:source-docs/sm-core-model/GeoZone.adoc[GeoZone] - Geo zone entity
+* link:source-docs/sm-core-model/GeoZoneDescription.adoc[GeoZoneDescription] - Geo zone description
+
+==== Shipping Domain
+
+* link:source-docs/sm-core-model/ShippingConfiguration.adoc[ShippingConfiguration] - Shipping configuration
+* link:source-docs/sm-core-model/ShippingDescription.adoc[ShippingDescription] - Shipping description
+* link:source-docs/sm-core-model/ShippingQuote.adoc[ShippingQuote] - Shipping quote
+* link:source-docs/sm-core-model/Quote.adoc[Quote] - Quote entity
+* link:source-docs/sm-core-model/ShippingType.adoc[ShippingType] - Shipping type enum
+* link:source-docs/sm-core-model/ShippingBasisType.adoc[ShippingBasisType] - Shipping basis type enum
+
+=== sm-core-modules Module (14 files)
+
+The sm-core-modules module contains integration modules for external services.
+
+==== Shipping Integration
+
+* link:source-docs/sm-core-modules/ShippingQuoteModule.adoc[ShippingQuoteModule] - Shipping quote module interface
+* link:source-docs/sm-core-modules/ShippingQuotePrePostProcessModule.adoc[ShippingQuotePrePostProcessModule] - Shipping quote pre/post processor
+* link:source-docs/sm-core-modules/CustomShippingQuotesConfiguration.adoc[CustomShippingQuotesConfiguration] - Custom shipping configuration
+* link:source-docs/sm-core-modules/CustomShippingQuoteItem.adoc[CustomShippingQuoteItem] - Custom shipping quote item
+* link:source-docs/sm-core-modules/CustomShippingQuoteWeightItem.adoc[CustomShippingQuoteWeightItem] - Weight-based shipping item
+* link:source-docs/sm-core-modules/CustomShippingQuotesRegion.adoc[CustomShippingQuotesRegion] - Shipping region configuration
+* link:source-docs/sm-core-modules/Packaging.adoc[Packaging] - Packaging model
+
+==== Payment Integration
+
+* link:source-docs/sm-core-modules/PaymentModule.adoc[PaymentModule] - Payment module interface
+
+==== Utility Modules
+
+* link:source-docs/sm-core-modules/GeoLocation.adoc[GeoLocation] - Geo-location utilities
+* link:source-docs/sm-core-modules/Encryption.adoc[Encryption] - Encryption utilities
+* link:source-docs/sm-core-modules/Constants.adoc[Constants] - Module constants
+
+==== Base Module
+
+* link:source-docs/sm-core-modules/Module.adoc[Module] - Base module interface
+* link:source-docs/sm-core-modules/IntegrationException.adoc[IntegrationException] - Integration exception
+
+==== Order Processing
+
+* link:source-docs/sm-core-modules/OrderTotalPostProcessorModule.adoc[OrderTotalPostProcessorModule] - Order total post processor
+
+== Documentation Structure
+
+Each source file documentation follows this structure:
+
+1. *Summary* - Overview including file path, package, type, and description
+2. *Overview* - General context about the component
+3. *Dependencies* - Imported packages categorized by type (Java/JavaX, Spring Framework, Application)
+4. *Methods* - Table of methods with visibility, return type, and name
+5. *Source Code Reference* - Link back to the original source file
+
+== Technology Stack
+
+The Shopizer platform is built with:
+
+* *Java 17+* - Programming language
+* *Spring Boot* - Application framework
+* *Spring Security* - Authentication and authorization
+* *Hibernate/JPA* - Object-relational mapping
+* *Maven* - Build and dependency management
+* *Swagger/OpenAPI* - API documentation
+* *MySQL/H2* - Database support
+
+== Building and Running
+
+For instructions on building and running Shopizer, see the main link:../README.md[README].
+
+== API Documentation
+
+Interactive API documentation is available when running the application at:
+http://localhost:8080/swagger-ui.html
+
+== License
+
+Shopizer is licensed under the Apache License 2.0. See link:../LICENSE.md[LICENSE.md] for details.
+
+== Additional Resources
+
+* *Main Repository*: https://github.com/Capgemini-AIApps/shopizer
+* *Documentation*: https://shopizer-ecommerce.github.io/documentation/
+* *Website*: http://www.shopizer.com
+* *Slack Community*: https://shopizer.slack.com
+
+---
+
+_This documentation was automatically generated as retro-documentation for the Shopizer project._

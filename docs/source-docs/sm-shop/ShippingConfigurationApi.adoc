@@ -1,0 +1,80 @@
+= ShippingConfigurationApi
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shipping/ShippingConfigurationApi.java`
+
+*Package:* `com.salesmanager.shop.store.api.v1.shipping`
+
+*Type:*  class
+
+*Description:* Get available shipping modules
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.api.v1.shipping` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+* `java.util.Map`
+* `java.util.Optional`
+* `java.util.stream.Collectors`
+* `java.util.stream.Stream`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.annotation.Autowired`
+* `org.springframework.http.HttpStatus`
+* `org.springframework.web.bind.annotation.GetMapping`
+* `org.springframework.web.bind.annotation.PathVariable`
+* `org.springframework.web.bind.annotation.PostMapping`
+* `org.springframework.web.bind.annotation.RequestBody`
+* `org.springframework.web.bind.annotation.RequestMapping`
+* `org.springframework.web.bind.annotation.RequestMethod`
+* `org.springframework.web.bind.annotation.ResponseBody`
+* `org.springframework.web.bind.annotation.ResponseStatus`
+
+*Application Imports:*
+
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.shipping.ShippingService`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.reference.language.Language`
+* `com.salesmanager.core.model.shipping.PackageDetails`
+* `com.salesmanager.core.model.system.IntegrationConfiguration`
+* `com.salesmanager.core.model.system.IntegrationModule`
+* `com.salesmanager.shop.constants.Constants`
+
+== Methods
+
+This class contains 9 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |ReadableAddress |shippingOrigin()
+|public |void |saveShippingOrigin()
+|public |PackageDetails |getPackage()
+|public |void |createPackage()
+|public |void |updatePackage()
+|public |void |deletePackage()
+|public |IntegrationConfiguration |shippingModule()
+|public |void |configure()
+|private |IntegrationModuleSummaryEntity |integrationModule()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shipping/ShippingConfigurationApi.java`
+

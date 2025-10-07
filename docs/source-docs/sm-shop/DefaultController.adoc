@@ -1,0 +1,36 @@
+= DefaultController
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/api/DefaultController.java`
+
+*Package:* `com.salesmanager.shop.store.api`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.api` package.
+
+== Dependencies
+
+=== Imports
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.annotation.Autowired`
+* `org.springframework.core.env.Environment`
+* `org.springframework.stereotype.Controller`
+* `org.springframework.ui.Model`
+* `org.springframework.web.bind.annotation.GetMapping`
+* `org.springframework.web.bind.annotation.ResponseBody`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/api/DefaultController.java`
+

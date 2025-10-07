@@ -1,0 +1,43 @@
+= ShoppingCartService
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartService.java`
+
+*Package:* `com.salesmanager.core.business.services.shoppingcart`
+
+*Type:*  interface
+
+*Description:* Creates a list of ShippingProduct based on the ShoppingCart if items are virtual return list will be null
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.business.services.shoppingcart` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityService`
+* `com.salesmanager.core.model.catalog.product.Product`
+* `com.salesmanager.core.model.catalog.product.variant.ProductVariant`
+* `com.salesmanager.core.model.customer.Customer`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.shipping.ShippingProduct`
+* `com.salesmanager.core.model.shoppingcart.ShoppingCart`
+* `com.salesmanager.core.model.shoppingcart.ShoppingCartItem`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartService.java`
+

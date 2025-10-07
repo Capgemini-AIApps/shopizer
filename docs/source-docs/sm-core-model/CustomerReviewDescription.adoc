@@ -1,0 +1,55 @@
+= CustomerReviewDescription
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/customer/review/CustomerReviewDescription.java`
+
+*Package:* `com.salesmanager.core.model.customer.review`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.customer.review` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `javax.persistence.Entity`
+* `javax.persistence.JoinColumn`
+* `javax.persistence.ManyToOne`
+* `javax.persistence.SequenceGenerator`
+* `javax.persistence.Table`
+* `javax.persistence.TableGenerator`
+* `javax.persistence.UniqueConstraint`
+
+*Application Imports:*
+
+* `com.salesmanager.core.constants.SchemaConstant`
+* `com.salesmanager.core.model.common.description.Description`
+* `com.salesmanager.core.model.reference.language.Language`
+
+== Methods
+
+This class contains 2 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |CustomerReview |getCustomerReview()
+|public |void |setCustomerReview()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/customer/review/CustomerReviewDescription.java`
+

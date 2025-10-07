@@ -1,0 +1,71 @@
+= ProductItemsFacadeImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/facade/items/ProductItemsFacadeImpl.java`
+
+*Package:* `com.salesmanager.shop.store.facade.items`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.facade.items` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.Comparator`
+* `java.util.List`
+* `java.util.stream.Collectors`
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.annotation.Qualifier`
+* `org.springframework.stereotype.Component`
+
+*Application Imports:*
+
+* `org.apache.commons.collections4.CollectionUtils`
+* `org.apache.commons.lang3.Validate`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.catalog.pricing.PricingService`
+* `com.salesmanager.core.business.services.catalog.product.ProductService`
+* `com.salesmanager.core.business.services.catalog.product.relationship.ProductRelationshipService`
+* `com.salesmanager.core.model.catalog.product.Product`
+* `com.salesmanager.core.model.catalog.product.ProductCriteria`
+* `com.salesmanager.core.model.catalog.product.relationship.ProductRelationship`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+
+== Methods
+
+This class contains 8 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |ReadableProductList |listItemsByManufacturer()
+|public |ReadableProductList |listItemsByIds()
+|public |ReadableProductList |listItemsByGroup()
+|public |ReadableProductList |addItemToGroup()
+|public |ReadableProductList |removeItemFromGroup()
+|public |void |deleteGroup()
+|public |ProductGroup |createProductGroup()
+|public |void |updateProductGroup()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/facade/items/ProductItemsFacadeImpl.java`
+

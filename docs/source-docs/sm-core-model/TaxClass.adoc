@@ -1,0 +1,67 @@
+= TaxClass
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxclass/TaxClass.java`
+
+*Package:* `com.salesmanager.core.model.tax.taxclass`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.tax.taxclass` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.List`
+* `javax.persistence.Column`
+* `javax.persistence.Entity`
+* `javax.persistence.FetchType`
+* `javax.persistence.GeneratedValue`
+* `javax.persistence.GenerationType`
+* `javax.persistence.Id`
+* `javax.persistence.Index`
+* `javax.persistence.JoinColumn`
+
+*Application Imports:*
+
+* `com.salesmanager.core.constants.SchemaConstant`
+* `com.salesmanager.core.model.catalog.product.Product`
+* `com.salesmanager.core.model.generic.SalesManagerEntity`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.tax.taxrate.TaxRate`
+
+== Methods
+
+This class contains 9 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Long |getId()
+|public |void |setId()
+|public |String |getTitle()
+|public |void |setTitle()
+|public |String |getCode()
+|public |void |setCode()
+|public |void |setTaxRates()
+|public |MerchantStore |getMerchantStore()
+|public |void |setMerchantStore()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxclass/TaxClass.java`
+

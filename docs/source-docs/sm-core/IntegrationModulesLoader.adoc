@@ -1,0 +1,59 @@
+= IntegrationModulesLoader
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/IntegrationModulesLoader.java`
+
+*Package:* `com.salesmanager.core.business.services.reference.loader`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.business.services.reference.loader` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.io.InputStream`
+* `java.util.ArrayList`
+* `java.util.HashMap`
+* `java.util.List`
+* `java.util.Map`
+
+*Spring Framework Imports:*
+
+* `org.springframework.stereotype.Component`
+
+*Application Imports:*
+
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.fasterxml.jackson.databind.ObjectMapper`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.model.system.IntegrationModule`
+* `com.salesmanager.core.model.system.ModuleConfig`
+
+== Methods
+
+This class contains 1 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |IntegrationModule |loadModule()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/IntegrationModulesLoader.java`
+

@@ -1,0 +1,31 @@
+= GeoLocation
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-modules/src/main/java/com/salesmanager/core/modules/utils/GeoLocation.java`
+
+*Package:* `com.salesmanager.core.modules.utils`
+
+*Type:*  interface
+
+*Description:* No description available
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.modules.utils` package.
+
+== Dependencies
+
+=== Imports
+
+*Application Imports:*
+
+* `com.salesmanager.core.model.common.Address`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-modules/src/main/java/com/salesmanager/core/modules/utils/GeoLocation.java`
+

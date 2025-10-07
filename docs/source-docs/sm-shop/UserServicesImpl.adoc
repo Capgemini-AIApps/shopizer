@@ -1,0 +1,71 @@
+= UserServicesImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/admin/security/UserServicesImpl.java`
+
+*Package:* `com.salesmanager.shop.admin.security`
+
+*Type:*  class
+
+*Description:* http://stackoverflow.com/questions/5105776/spring-security-with -custom-user-details
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.admin.security` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `javax.inject.Inject`
+* `javax.inject.Named`
+* `java.util.ArrayList`
+* `java.util.Collection`
+* `java.util.List`
+
+*Spring Framework Imports:*
+
+* `org.springframework.dao.DataAccessException`
+* `org.springframework.security.core.GrantedAuthority`
+* `org.springframework.security.core.authority.SimpleGrantedAuthority`
+* `org.springframework.security.core.userdetails.User`
+* `org.springframework.security.core.userdetails.UserDetails`
+* `org.springframework.security.core.userdetails.UsernameNotFoundException`
+* `org.springframework.security.crypto.password.PasswordEncoder`
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.services.merchant.MerchantStoreService`
+* `com.salesmanager.core.business.services.user.GroupService`
+* `com.salesmanager.core.business.services.user.PermissionService`
+* `com.salesmanager.core.business.services.user.UserService`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.user.Group`
+* `com.salesmanager.core.model.user.GroupType`
+* `com.salesmanager.core.model.user.Permission`
+* `com.salesmanager.shop.constants.Constants`
+* `org.slf4j.Logger`
+
+== Methods
+
+This class contains 2 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |UserDetails |loadUserByUsername()
+|public |void |createDefaultAdmin()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/admin/security/UserServicesImpl.java`
+

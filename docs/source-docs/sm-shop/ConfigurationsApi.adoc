@@ -1,0 +1,62 @@
+= ConfigurationsApi
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/configurations/ConfigurationsApi.java`
+
+*Package:* `com.salesmanager.shop.store.api.v1.configurations`
+
+*Type:*  class
+
+*Description:* Configurations of modules
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.api.v1.configurations` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+
+*Spring Framework Imports:*
+
+* `org.springframework.web.bind.annotation.GetMapping`
+* `org.springframework.web.bind.annotation.PostMapping`
+* `org.springframework.web.bind.annotation.RequestMapping`
+* `org.springframework.web.bind.annotation.RestController`
+
+*Application Imports:*
+
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.reference.language.Language`
+* `com.salesmanager.shop.model.configuration.ReadableConfiguration`
+* `io.swagger.annotations.Api`
+* `io.swagger.annotations.ApiImplicitParam`
+* `io.swagger.annotations.ApiImplicitParams`
+* `io.swagger.annotations.ApiOperation`
+* `io.swagger.annotations.SwaggerDefinition`
+* `io.swagger.annotations.Tag`
+* `springfox.documentation.annotations.ApiIgnore`
+
+== Methods
+
+This class contains 1 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Void |create()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/configurations/ConfigurationsApi.java`
+

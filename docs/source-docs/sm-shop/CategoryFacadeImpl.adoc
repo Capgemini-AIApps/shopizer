@@ -1,0 +1,86 @@
+= CategoryFacadeImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/facade/category/CategoryFacadeImpl.java`
+
+*Package:* `com.salesmanager.shop.store.facade.category`
+
+*Type:*  class
+
+*Description:* c.children1 <p> children1.children1 children1.children2
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.facade.category` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.Comparator`
+* `java.util.HashMap`
+* `java.util.Iterator`
+* `java.util.List`
+* `java.util.Map`
+* `java.util.Map.Entry`
+* `java.util.Objects`
+* `java.util.Optional`
+* `java.util.function.Function`
+
+*Spring Framework Imports:*
+
+* `org.springframework.stereotype.Service`
+* `org.springframework.util.CollectionUtils`
+
+*Application Imports:*
+
+* `org.apache.commons.lang3.Validate`
+* `com.salesmanager.core.business.exception.ConversionException`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.catalog.category.CategoryService`
+* `com.salesmanager.core.business.services.catalog.product.attribute.ProductAttributeService`
+* `com.salesmanager.core.business.services.merchant.MerchantStoreService`
+* `com.salesmanager.core.model.catalog.category.Category`
+* `com.salesmanager.core.model.catalog.product.attribute.ProductAttribute`
+* `com.salesmanager.core.model.catalog.product.attribute.ProductOption`
+* `com.salesmanager.core.model.catalog.product.attribute.ProductOptionDescription`
+
+== Methods
+
+This class contains 18 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |ReadableCategoryList |getCategoryHierarchy()
+|public |boolean |existByCode()
+|public |PersistableCategory |saveCategory()
+|private |Category |populateCategory()
+|private |void |saveCategory()
+|public |ReadableCategory |getById()
+|private |void |addChildToParent()
+|private |Category |getCategoryById()
+|public |void |deleteCategory()
+|public |ReadableCategory |getByCode()
+|public |ReadableCategory |getCategoryByFriendlyUrl()
+|private |Category |getById()
+|public |void |deleteCategory()
+|private |Category |getOne()
+|public |void |move()
+|public |Category |getByCode()
+|public |void |setVisible()
+|public |ReadableCategoryList |listByProduct()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/facade/category/CategoryFacadeImpl.java`
+

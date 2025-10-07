@@ -1,0 +1,50 @@
+= ProductService
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductService.java`
+
+*Package:* `com.salesmanager.core.business.services.catalog.product`
+
+*Type:*  interface
+
+*Description:* The method to be used
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.business.services.catalog.product` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+* `java.util.Locale`
+* `java.util.Optional`
+
+*Spring Framework Imports:*
+
+* `org.springframework.data.domain.Page`
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityService`
+* `com.salesmanager.core.model.catalog.category.Category`
+* `com.salesmanager.core.model.catalog.product.Product`
+* `com.salesmanager.core.model.catalog.product.ProductCriteria`
+* `com.salesmanager.core.model.catalog.product.ProductList`
+* `com.salesmanager.core.model.catalog.product.description.ProductDescription`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.reference.language.Language`
+* `com.salesmanager.core.model.tax.taxclass.TaxClass`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductService.java`
+

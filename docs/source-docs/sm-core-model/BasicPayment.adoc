@@ -1,0 +1,23 @@
+= BasicPayment
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/payments/BasicPayment.java`
+
+*Package:* `com.salesmanager.core.model.payments`
+
+*Type:*  class
+
+*Description:* When the user performs a payment using money order or cheque
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.payments` package.
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/payments/BasicPayment.java`
+

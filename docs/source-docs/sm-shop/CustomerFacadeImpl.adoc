@@ -1,0 +1,95 @@
+= CustomerFacadeImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacadeImpl.java`
+
+*Package:* `com.salesmanager.shop.store.controller.customer.facade`
+
+*Type:*  class
+
+*Description:* 
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.controller.customer.facade` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.Collection`
+* `java.util.Date`
+* `java.util.List`
+* `java.util.Locale`
+* `java.util.Map`
+* `java.util.Optional`
+* `java.util.stream.Collectors`
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.annotation.Autowired`
+* `org.springframework.beans.factory.annotation.Qualifier`
+* `org.springframework.scheduling.annotation.Async`
+* `org.springframework.security.authentication.AuthenticationManager`
+* `org.springframework.security.authentication.UsernamePasswordAuthenticationToken`
+* `org.springframework.security.core.Authentication`
+* `org.springframework.security.core.GrantedAuthority`
+* `org.springframework.security.core.authority.SimpleGrantedAuthority`
+* `org.springframework.security.core.context.SecurityContextHolder`
+* `org.springframework.security.crypto.password.PasswordEncoder`
+
+*Application Imports:*
+
+* `org.apache.commons.collections4.CollectionUtils`
+* `org.apache.commons.lang3.StringUtils`
+* `org.apache.commons.lang3.Validate`
+* `org.jgroups.util.UUID`
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.exception.ConversionException`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.modules.email.Email`
+* `com.salesmanager.core.business.services.customer.CustomerService`
+
+== Methods
+
+This class contains 49 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |CustomerEntity |getCustomerDataByUserName()
+|public |ShoppingCart |mergeCart()
+|public |Customer |getCustomerByUserName()
+|public |ReadableCustomer |getByUserName()
+|private |Customer |getCustomerByNickAndStoreId()
+|public |boolean |checkIfUserExists()
+|public |PersistableCustomer |registerCustomer()
+|public |Customer |getCustomerModel()
+|public |void |setCustomerModelDefaultProperties()
+|public |void |authenticate()
+|public |Address |getAddress()
+|public |void |updateAddress()
+|public |ReadableCustomer |getCustomerById()
+|public |Customer |populateCustomerModel()
+|public |ReadableCustomer |create()
+|private |void |saveCustomer()
+|private |boolean |userExist()
+|private |Customer |convertPersistableCustomerToCustomer()
+|private |void |notifyNewCustomer()
+|private |PersistableCustomer |updateAuthCustomer()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacadeImpl.java`
+

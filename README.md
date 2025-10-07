@@ -111,6 +111,8 @@ Please read the instructions on how to connect to MySQL, configure an email serv
 
 Documentation available [<https://shopizer-ecommerce.github.io/documentation/>](http://localhost:8080/swagger-ui/index.html)
 
+**Source Code Documentation:** Comprehensive AsciiDoc documentation for all source files is available in the [docs/](docs/) directory. See [docs/README.md](docs/README.md) for details on viewing and building the documentation.
+
 ChatOps <https://shopizer.slack.com>  - Join our Slack channel <https://communityinviter.com/apps/shopizer/shopizer>
 
 More information is available on shopizer web site here <http://www.shopizer.com>

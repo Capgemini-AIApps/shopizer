@@ -1,0 +1,82 @@
+= PaymentServiceImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java`
+
+*Package:* `com.salesmanager.core.business.services.payments`
+
+*Type:*  class
+
+*Description:* Use commons validator CreditCardValidator
+
+== Overview
+
+This class is part of the `com.salesmanager.core.business.services.payments` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.math.BigDecimal`
+* `java.util.ArrayList`
+* `java.util.Date`
+* `java.util.HashMap`
+* `java.util.List`
+* `java.util.Map`
+* `java.util.Set`
+* `java.util.regex.Matcher`
+* `java.util.regex.Pattern`
+* `javax.annotation.Resource`
+
+*Spring Framework Imports:*
+
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.apache.commons.lang3.StringUtils`
+* `org.apache.commons.lang3.Validate`
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.constants.Constants`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.order.OrderService`
+* `com.salesmanager.core.business.services.reference.loader.ConfigurationModulesLoader`
+* `com.salesmanager.core.business.services.system.MerchantConfigurationService`
+* `com.salesmanager.core.business.services.system.ModuleConfigurationService`
+
+== Methods
+
+This class contains 15 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |IntegrationModule |getPaymentMethodByType()
+|public |IntegrationModule |getPaymentMethodByCode()
+|public |IntegrationConfiguration |getPaymentConfiguration()
+|public |void |savePaymentModuleConfiguration()
+|public |void |removePaymentModuleConfiguration()
+|public |Transaction |processPayment()
+|public |PaymentModule |getPaymentModule()
+|public |Transaction |processCapturePayment()
+|public |Transaction |processRefund()
+|public |void |validateCreditCard()
+|private |void |validateCreditCardDate()
+|private |void |validateCreditCardNumber()
+|private |void |luhnValidate()
+|public |Transaction |initTransaction()
+|public |Transaction |initTransaction()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java`
+

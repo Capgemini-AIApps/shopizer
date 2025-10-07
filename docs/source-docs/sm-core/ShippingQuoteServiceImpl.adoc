@@ -1,0 +1,60 @@
+= ShippingQuoteServiceImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingQuoteServiceImpl.java`
+
+*Package:* `com.salesmanager.core.business.services.shipping`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.business.services.shipping` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.apache.commons.lang3.Validate`
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.repositories.shipping.ShippingQuoteRepository`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityServiceImpl`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.order.Order`
+* `com.salesmanager.core.model.shipping.Quote`
+* `com.salesmanager.core.model.shipping.ShippingSummary`
+
+== Methods
+
+This class contains 1 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |ShippingSummary |getShippingSummary()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingQuoteServiceImpl.java`
+

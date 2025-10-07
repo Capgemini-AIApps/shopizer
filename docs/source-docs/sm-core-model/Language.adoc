@@ -1,0 +1,69 @@
+= Language
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java`
+
+*Package:* `com.salesmanager.core.model.reference.language`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.reference.language` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.List`
+* `javax.persistence.Cacheable`
+* `javax.persistence.Column`
+* `javax.persistence.Embedded`
+* `javax.persistence.Entity`
+* `javax.persistence.EntityListeners`
+* `javax.persistence.FetchType`
+* `javax.persistence.GeneratedValue`
+* `javax.persistence.GenerationType`
+
+*Application Imports:*
+
+* `com.fasterxml.jackson.annotation.JsonIgnore`
+* `com.salesmanager.core.constants.SchemaConstant`
+* `com.salesmanager.core.model.common.audit.AuditListener`
+* `com.salesmanager.core.model.common.audit.AuditSection`
+* `com.salesmanager.core.model.common.audit.Auditable`
+* `com.salesmanager.core.model.generic.SalesManagerEntity`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+
+== Methods
+
+This class contains 9 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Integer |getId()
+|public |void |setId()
+|public |String |getCode()
+|public |void |setCode()
+|public |Integer |getSortOrder()
+|public |void |setSortOrder()
+|public |AuditSection |getAuditSection()
+|public |void |setAuditSection()
+|public |boolean |equals()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java`
+

@@ -1,0 +1,66 @@
+= AbstractCustomerServices
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/security/AbstractCustomerServices.java`
+
+*Package:* `com.salesmanager.shop.store.security`
+
+*Type:* abstract class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.security` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.Collection`
+* `java.util.List`
+
+*Spring Framework Imports:*
+
+* `org.springframework.dao.DataAccessException`
+* `org.springframework.security.core.GrantedAuthority`
+* `org.springframework.security.core.authority.SimpleGrantedAuthority`
+* `org.springframework.security.core.userdetails.UserDetails`
+* `org.springframework.security.core.userdetails.UserDetailsService`
+* `org.springframework.security.core.userdetails.UsernameNotFoundException`
+
+*Application Imports:*
+
+* `org.apache.commons.collections4.CollectionUtils`
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.customer.CustomerService`
+* `com.salesmanager.core.business.services.user.GroupService`
+* `com.salesmanager.core.business.services.user.PermissionService`
+* `com.salesmanager.core.model.customer.Customer`
+* `com.salesmanager.core.model.user.Group`
+* `com.salesmanager.core.model.user.Permission`
+
+== Methods
+
+This class contains 1 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |UserDetails |loadUserByUsername()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/security/AbstractCustomerServices.java`
+

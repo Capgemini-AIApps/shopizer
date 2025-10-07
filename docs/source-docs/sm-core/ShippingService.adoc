@@ -1,0 +1,45 @@
+= ShippingService
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingService.java`
+
+*Package:* `com.salesmanager.core.business.services.shipping`
+
+*Type:*  interface
+
+*Description:* Returns a list of supported countries (ship to country list) configured by merchant when the merchant configured shipping National and has saved a list of ship to country from the list
+
+== Overview
+
+This interface is part of the `com.salesmanager.core.business.services.shipping` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+* `java.util.Map`
+
+*Application Imports:*
+
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.model.common.Delivery`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.reference.country.Country`
+* `com.salesmanager.core.model.reference.language.Language`
+* `com.salesmanager.core.model.shipping.PackageDetails`
+* `com.salesmanager.core.model.shipping.ShippingConfiguration`
+* `com.salesmanager.core.model.shipping.ShippingMetaData`
+* `com.salesmanager.core.model.shipping.ShippingOption`
+* `com.salesmanager.core.model.shipping.ShippingProduct`
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingService.java`
+

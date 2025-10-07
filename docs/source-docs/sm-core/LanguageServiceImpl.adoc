@@ -1,0 +1,66 @@
+= LanguageServiceImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java`
+
+*Package:* `com.salesmanager.core.business.services.reference.language`
+
+*Type:*  class
+
+*Description:* https://samerabdelkafi.wordpress.com/2014/05/29/spring-data-jpa/
+
+== Overview
+
+This class is part of the `com.salesmanager.core.business.services.reference.language` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.LinkedHashMap`
+* `java.util.List`
+* `java.util.Locale`
+* `java.util.Map`
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.cache.annotation.Cacheable`
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.constants.Constants`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.repositories.reference.language.LanguageRepository`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityServiceImpl`
+* `com.salesmanager.core.business.utils.CacheUtils`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.reference.language.Language`
+
+== Methods
+
+This class contains 4 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Language |getByCode()
+|public |Locale |toLocale()
+|public |Language |toLanguage()
+|public |Language |defaultLanguage()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java`
+

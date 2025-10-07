@@ -1,0 +1,82 @@
+= TaxRate
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java`
+
+*Package:* `com.salesmanager.core.model.tax.taxrate`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.model.tax.taxrate` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.math.BigDecimal`
+* `java.util.ArrayList`
+* `java.util.List`
+* `javax.persistence.CascadeType`
+* `javax.persistence.Column`
+* `javax.persistence.Embedded`
+* `javax.persistence.Entity`
+* `javax.persistence.EntityListeners`
+* `javax.persistence.FetchType`
+* `javax.persistence.GeneratedValue`
+
+*Application Imports:*
+
+* `com.salesmanager.core.constants.SchemaConstant`
+* `com.salesmanager.core.model.common.audit.AuditListener`
+* `com.salesmanager.core.model.common.audit.AuditSection`
+* `com.salesmanager.core.model.common.audit.Auditable`
+* `com.salesmanager.core.model.generic.SalesManagerEntity`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.reference.country.Country`
+* `com.salesmanager.core.model.reference.zone.Zone`
+* `com.salesmanager.core.model.tax.taxclass.TaxClass`
+
+== Methods
+
+This class contains 28 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |String |getRateText()
+|public |void |setRateText()
+|public |Long |getId()
+|public |void |setId()
+|public |AuditSection |getAuditSection()
+|public |void |setAuditSection()
+|public |Integer |getTaxPriority()
+|public |void |setTaxPriority()
+|public |BigDecimal |getTaxRate()
+|public |void |setTaxRate()
+|public |boolean |isPiggyback()
+|public |void |setPiggyback()
+|public |TaxClass |getTaxClass()
+|public |void |setTaxClass()
+|public |void |setDescriptions()
+|public |MerchantStore |getMerchantStore()
+|public |void |setMerchantStore()
+|public |void |setCountry()
+|public |Country |getCountry()
+|public |void |setZone()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java`
+

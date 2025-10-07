@@ -1,0 +1,71 @@
+= ManufacturerFacadeImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-shop/src/main/java/com/salesmanager/shop/store/facade/manufacturer/ManufacturerFacadeImpl.java`
+
+*Package:* `com.salesmanager.shop.store.facade.manufacturer`
+
+*Type:*  class
+
+*Description:* Is this a pageable request
+
+== Overview
+
+This class is part of the `com.salesmanager.shop.store.facade.manufacturer` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.ArrayList`
+* `java.util.Comparator`
+* `java.util.List`
+* `java.util.stream.Collectors`
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.beans.factory.annotation.Autowired`
+* `org.springframework.data.domain.Page`
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.jsoup.helper.Validate`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.services.catalog.category.CategoryService`
+* `com.salesmanager.core.business.services.catalog.product.manufacturer.ManufacturerService`
+* `com.salesmanager.core.business.services.reference.language.LanguageService`
+* `com.salesmanager.core.model.catalog.category.Category`
+* `com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer`
+* `com.salesmanager.core.model.merchant.MerchantStore`
+* `com.salesmanager.core.model.reference.language.Language`
+* `com.salesmanager.shop.mapper.Mapper`
+
+== Methods
+
+This class contains 7 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |int |compare()
+|public |void |saveOrUpdateManufacturer()
+|public |void |deleteManufacturer()
+|public |ReadableManufacturer |getManufacturer()
+|public |ReadableManufacturerList |getAllManufacturers()
+|public |boolean |manufacturerExist()
+|public |ReadableManufacturerList |listByStore()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-shop/src/main/java/com/salesmanager/shop/store/facade/manufacturer/ManufacturerFacadeImpl.java`
+

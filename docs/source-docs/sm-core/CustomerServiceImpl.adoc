@@ -1,0 +1,68 @@
+= CustomerServiceImpl
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+
+== Summary
+
+*File Path:* `sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerServiceImpl.java`
+
+*Package:* `com.salesmanager.core.business.services.customer`
+
+*Type:*  class
+
+*Description:* No description available
+
+== Overview
+
+This class is part of the `com.salesmanager.core.business.services.customer` package.
+
+== Dependencies
+
+=== Imports
+
+*Java/JavaX Imports:*
+
+* `java.util.List`
+* `javax.inject.Inject`
+
+*Spring Framework Imports:*
+
+* `org.springframework.stereotype.Service`
+
+*Application Imports:*
+
+* `org.slf4j.Logger`
+* `org.slf4j.LoggerFactory`
+* `com.salesmanager.core.business.exception.ServiceException`
+* `com.salesmanager.core.business.repositories.customer.CustomerRepository`
+* `com.salesmanager.core.business.services.common.generic.SalesManagerEntityServiceImpl`
+* `com.salesmanager.core.business.services.customer.attribute.CustomerAttributeService`
+* `com.salesmanager.core.model.common.Address`
+* `com.salesmanager.core.model.customer.Customer`
+* `com.salesmanager.core.model.customer.CustomerCriteria`
+* `com.salesmanager.core.model.customer.CustomerList`
+
+== Methods
+
+This class contains 9 methods:
+
+[cols="1,2,2", options="header"]
+|===
+|Visibility |Return Type |Method Name
+
+|public |Customer |getById()
+|public |Customer |getByNick()
+|public |Customer |getByNick()
+|public |CustomerList |getListByStore()
+|public |Address |getCustomerAddress()
+|public |void |saveOrUpdate()
+|public |void |delete()
+|public |Customer |getByNick()
+|public |Customer |getByPasswordResetToken()
+|===
+
+== Source Code Reference
+
+The complete source code can be found at: `sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerServiceImpl.java`
+
